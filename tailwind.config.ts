@@ -8,6 +8,7 @@ const config: Config = {
 	],
 	theme: {
 		fontSize: {
+			xxs: "0.5rem",
 			xs: "0.75rem",
 			sm: "0.875rem",
 			base: "1rem",
@@ -19,7 +20,9 @@ const config: Config = {
 		},
 		extend: {
 			height: {
+				"112": "28rem",
 				"128": "32rem",
+				"136": "34rem",
 				"144": "36rem",
 			},
 			fontFamily: {
@@ -34,7 +37,7 @@ const config: Config = {
 			md: "600px",
 			// => @media (min-width: 768px) { ... }
 
-			lg: "960px",
+			lg: "1076px",
 			// => @media (min-width: 1024px) { ... }
 
 			// xl: "1280px",

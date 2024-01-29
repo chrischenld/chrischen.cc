@@ -6,6 +6,7 @@
 	--foreground-rgb: 255, 255, 255;
 	--background-start-rgb: 23, 23, 23;
 	--background-end-rgb: 28, 28, 28;
+	--background-rgb: 26, 26, 26;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -30,12 +31,7 @@ html {
 body {
 	font-family: monospace;
 	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
+	background: rgb(var(--background-rgb));
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -62,7 +58,8 @@ h6 {
 	line-height: 1.8;
 }
 
-p {
+p,
+li {
 	line-height: 1.8;
 }
 
