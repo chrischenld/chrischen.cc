@@ -50,7 +50,7 @@ export default function Home() {
 
 	return (
 		<main className="flex flex-col px-2 pt-4 md:p-0 gap-4 min-h-screen items-center">
-			<p className="w-full h-fit md:fixed md:min-w-16 inset-y-8 md:left-8 font-pantasia uppercase text-neutral-400">
+			<p className="w-full h-fit md:fixed md:min-w-16 inset-y-8 md:left-8 uppercase text-neutral-400">
 				<Link href="/">chris chen</Link>
 			</p>
 			<div className="md:fixed hidden lg:block min-w-16 inset-y-32 lg:right-12 text-xs text-neutral-600">
