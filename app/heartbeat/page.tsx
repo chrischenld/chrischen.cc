@@ -53,7 +53,7 @@ export default function Home() {
 			<p className="w-full h-fit md:fixed md:min-w-16 inset-y-8 md:left-8 font-pantasia uppercase text-neutral-400">
 				<Link href="/">chris chen</Link>
 			</p>
-			<div className="md:fixed hidden lg:block min-w-16 inset-y-32 lg:right-12 text-xs text-neutral-500">
+			<div className="md:fixed hidden lg:block min-w-16 inset-y-32 lg:right-12 text-xs text-neutral-600">
 				<ul className="flex flex-col gap-1">
 					<li>
 						<Link
@@ -354,8 +354,8 @@ export default function Home() {
 			</div>
 			<footer className="pb-32 w-full md:max-w-lg lg:max-w-xl ">
 				<p>
-					<Link href="/" className="w-full">
-						back to home
+					<Link href="/" className="w-full hover:underline">
+						← back
 					</Link>
 				</p>
 			</footer>

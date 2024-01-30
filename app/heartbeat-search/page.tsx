@@ -53,7 +53,7 @@ export default function Home() {
 			<p className="w-full h-fit md:fixed md:min-w-16 inset-y-8 md:left-8 font-pantasia uppercase text-neutral-400">
 				<Link href="/">chris chen</Link>
 			</p>
-			<div className="md:fixed hidden lg:block min-w-16 inset-y-32 lg:right-12 text-xs text-neutral-500">
+			<div className="md:fixed hidden lg:block min-w-16 inset-y-32 lg:right-12 text-xs text-neutral-600">
 				<ul className="flex flex-col gap-1">
 					<li>
 						<Link
@@ -124,10 +124,10 @@ export default function Home() {
 					release in March 2022.)
 				</p>
 				<p>
-					At Heartbeat, search had been our most requested feature - especially
-					after communities began growing faster than we had expected. Admins
-					were digging through more and more content and new members didn&apos;t
-					know where to start looking.
+					At Heartbeat, search was by far our most requested feature -
+					especially after communities began growing faster than we had
+					expected. Admins were digging through more and more content and new
+					members didn&apos;t know where to start looking.
 				</p>
 				<h2 id="three-considerations">three considerations</h2>
 				<p>
@@ -139,10 +139,9 @@ export default function Home() {
 				</p>
 				<p>
 					Next, we leaned heavily into search filtering. Search modifiers in
-					some of our favorite products were felt incredible to use but
-					sometimes had a steep learning curve. Our goal was to make the process
-					of crafting a query powerful and efficient - but also easy to
-					navigate.
+					some of our favorite products felt incredible to use but some had a
+					steep learning curve. Our goal was to make the process of crafting a
+					query powerful and efficient - but also easy to navigate.
 				</p>
 				<p>
 					To complete the search experience, we needed to make results easily
@@ -291,8 +290,8 @@ export default function Home() {
 			</div>
 			<footer className="pb-32 w-full md:max-w-lg lg:max-w-xl ">
 				<p>
-					<Link href="/" className="w-full">
-						back to home
+					<Link href="/" className="w-full hover:underline">
+						← back
 					</Link>
 				</p>
 			</footer>

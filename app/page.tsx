@@ -7,8 +7,8 @@ export default function Home() {
 	return (
 		<main className="flex flex-col md:flex-row min-h-screen">
 			<div className="p-2 md:sticky md:top-0">
-				<div className="flex flex-col p-4 gap-4 w-full md:min-w-60 md:w-60 md:min-h-full h-auto text-xs text-neutral-400">
-					<h1 className="text-neutral-100">chris chen</h1>
+				<div className="flex flex-col px-4 gap-4 w-full md:min-w-60 md:w-60 md:min-h-full h-auto text-xs text-neutral-400">
+					<h1 className="text-neutral-100 ">chris chen</h1>
 					<p className="">
 						currently designing at{" "}
 						<a
@@ -30,7 +30,7 @@ export default function Home() {
 						(especially the design of virtual worlds and environments), and
 						keyboards (sorry).
 					</p>
-					<p className="text-xxs text-neutral-600">
+					<p className="text-xxs text-neutral-500">
 						please dont make me post linkedin here. find me at:
 					</p>
 					<ul className="text-neutral-100">
@@ -54,20 +54,19 @@ export default function Home() {
 								ig↗
 							</a>{" "}
 						</li>
-						{/* <li>twitter↗</li> */}
 					</ul>
-					<ul className="text-neutral-600">
+					<ul className="text-neutral-500">
 						<li>01.29.24</li>
 						<li>chrischen.cc</li>
 						<li>built with nextjs</li>
 					</ul>
 				</div>
 			</div>
-			<div className="grid grid-cols-1 lg:grid-cols-2 p-2 md:pr-6 md:pb-12 gap-6 w-full h-fit max-h-screen md:overflow-scroll text-neutral-400 text-sm uppercase font-pantasia">
+			<div className="grid grid-cols-1 lg:grid-cols-2 p-2 pt-4 md:pr-6 md:pb-12 gap-6 w-full h-fit max-h-screen md:overflow-scroll text-neutral-500 text-sm">
 				<Link href="/rosetta-tokens">
 					<div className="flex flex-col w-full h-144 hover:text-neutral-100">
 						<div className="h-136 border border-neutral-800 hover:border-neutral-600 relative"></div>
-						<div className="flex h-8 justify-between items-center">
+						<div className="flex h-8 justify-between items-end">
 							<p>rosetta tokens</p>
 							<p>→</p>
 						</div>
@@ -76,7 +75,7 @@ export default function Home() {
 				<Link href="/rosetta-tokens">
 					<div className="flex flex-col w-full h-144 hover:text-neutral-100">
 						<div className="h-136 border border-neutral-800 hover:border-neutral-600 relative"></div>
-						<div className="flex h-8 justify-between items-center">
+						<div className="flex h-8 justify-between items-end">
 							<p>squarespace design platform</p>
 							<p>→</p>
 						</div>
@@ -92,7 +91,7 @@ export default function Home() {
 								objectFit="cover"
 							></Image>
 						</div>
-						<div className="flex h-8 justify-between items-center">
+						<div className="flex h-8 justify-between items-end">
 							<p>heartbeat search</p>
 							<p>→</p>
 						</div>
@@ -108,7 +107,7 @@ export default function Home() {
 								objectFit="cover"
 							></Image>
 						</div>
-						<div className="flex h-8 justify-between items-center">
+						<div className="flex h-8 justify-between items-end">
 							<p>heartbeat</p>
 							<p>→</p>
 						</div>
