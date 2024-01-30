@@ -120,7 +120,7 @@ export default function Home() {
 			<div className="flex flex-col gap-6 pt-4 md:pt-32 pb-16 md:max-w-lg lg:max-w-xl text-neutral-400 text-sm lowercase">
 				<h1 className="text-neutral-100">rosetta color tokens</h1>
 				<p>
-					i&apos;m currently designing in the design platform team at
+					i&apos;m currently designing on the design platform team at
 					squarespace.
 				</p>
 				<p>

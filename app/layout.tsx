@@ -11,7 +11,7 @@ const fragmentMono = Fragment_Mono({
 	variable: "--font-fragment-mono",
 });
 const pantasia = Pantasia({
-	src: "../lib/Pantasia-Regular.woff2",
+	src: "./fonts/Pantasia-Regular.woff2",
 	variable: "--font-pantasia",
 });
 
