@@ -24,14 +24,14 @@ export default function Home() {
 					</p>
 					<p>
 						more about me: i&apos;ve also been really into learning frontend.
-						i&apos;m also into food (both cooking it & eating it) but also
-						learning about the cultures and intracices of regional cuisines.
-						other interests include powerlifitng (lift heavy thing), games
-						(especially the design of virtual worlds and environments), and
-						keyboards (sorry).
+						i&apos;m also into food (both cooking it & eating it) and learning
+						about the cultures and intracices of regional cuisines. other
+						interests include powerlifitng (lift heavy thing), games (especially
+						the design of virtual worlds and environments), and keyboards
+						(sorry).
 					</p>
 					<p className="text-xxs text-neutral-500">
-						please dont make me post linkedin here. find me at:
+						please dont make me post linkedin here.
 					</p>
 					<ul className="text-neutral-100">
 						<li>
