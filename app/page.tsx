@@ -77,7 +77,7 @@ export default function Home() {
 
 						<div className="flex h-8 justify-between items-end">
 							<div className="flex gap-4">
-								<p>rosetta tokens</p>
+								<p>SQSP color tokens</p>
 								{/* <p className="text-neutral-500">(case study)</p> */}
 							</div>
 							<p>→</p>
@@ -88,7 +88,7 @@ export default function Home() {
 					<div className="flex flex-col w-full h-144 hover:text-neutral-100">
 						<div className="h-136 border border-neutral-800 hover:border-neutral-600 relative"></div>
 						<div className="flex h-8 justify-between items-end">
-							<p>squarespace design platform</p>
+							<p>SQSP design platform</p>
 							<p>→</p>
 						</div>
 					</div>

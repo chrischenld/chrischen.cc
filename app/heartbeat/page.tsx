@@ -9,6 +9,7 @@ import heartbeat04 from "@/public/heartbeat04.webp";
 import heartbeat05 from "@/public/heartbeat05.webp";
 import heartbeat06 from "@/public/heartbeat06.webp";
 import heartbeat07 from "@/public/heartbeat07.webp";
+import home04 from "@/public/home04.png";
 import { useEffect, useState, useRef } from "react";
 
 function useHighlighted() {
@@ -28,7 +29,7 @@ function useHighlighted() {
 			rootMargin: "0% 0% -45% 0px",
 		});
 
-		const headings = document.querySelectorAll("h2, h3, h4");
+		const headings = document.querySelectorAll("h1, h2, h3, h4");
 		headings.forEach((heading) => {
 			if (observer.current) {
 				observer.current.observe(heading);
@@ -59,7 +60,9 @@ export default function Home() {
 						<Link
 							href="#what-is-heartbeat"
 							className={
-								activeLink === "what-is-heartbeat" ? "text-neutral-300" : ""
+								activeLink === "what-is-heartbeat"
+									? "text-neutral-300 activeLink"
+									: ""
 							}
 						>
 							what is heartbeat
@@ -68,7 +71,9 @@ export default function Home() {
 					<li>
 						<Link
 							href="#results"
-							className={activeLink === "results" ? "text-neutral-300" : ""}
+							className={
+								activeLink === "results" ? "text-neutral-300 activeLink" : ""
+							}
 						>
 							results
 						</Link>
@@ -76,7 +81,11 @@ export default function Home() {
 					<li>
 						<Link
 							href="#constraints"
-							className={activeLink === "constraints" ? "text-neutral-300" : ""}
+							className={
+								activeLink === "constraints"
+									? "text-neutral-300 activeLink"
+									: ""
+							}
 						>
 							constraints
 						</Link>
@@ -84,7 +93,9 @@ export default function Home() {
 					<li>
 						<Link
 							href="#challenges"
-							className={activeLink === "challenges" ? "text-neutral-300" : ""}
+							className={
+								activeLink === "challenges" ? "text-neutral-300 activeLink" : ""
+							}
 						>
 							challenges
 						</Link>
@@ -93,7 +104,9 @@ export default function Home() {
 						<Link
 							href="#documentation"
 							className={
-								activeLink === "documentation" ? "text-neutral-300" : ""
+								activeLink === "documentation"
+									? "text-neutral-300 activeLink"
+									: ""
 							}
 						>
 							documentation
@@ -102,7 +115,9 @@ export default function Home() {
 					<li>
 						<Link
 							href="#doc"
-							className={activeLink === "doc" ? "text-neutral-300" : ""}
+							className={
+								activeLink === "doc" ? "text-neutral-300 activeLink" : ""
+							}
 						>
 							avoiding figma complexity
 						</Link>
@@ -110,7 +125,9 @@ export default function Home() {
 					<li>
 						<Link
 							href="#primitives"
-							className={activeLink === "primitives" ? "text-neutral-300" : ""}
+							className={
+								activeLink === "primitives" ? "text-neutral-300 activeLink" : ""
+							}
 						>
 							primitives
 						</Link>
@@ -119,7 +136,9 @@ export default function Home() {
 						<Link
 							href="#top-level-components"
 							className={
-								activeLink === "top-level-components" ? "text-neutral-300" : ""
+								activeLink === "top-level-components"
+									? "text-neutral-300 activeLink"
+									: ""
 							}
 						>
 							top level components
@@ -129,7 +148,9 @@ export default function Home() {
 						<Link
 							href="#subcomponents"
 							className={
-								activeLink === "subcomponents" ? "text-neutral-300" : ""
+								activeLink === "subcomponents"
+									? "text-neutral-300 activeLink"
+									: ""
 							}
 						>
 							subcomponents
@@ -138,14 +159,22 @@ export default function Home() {
 					<li>
 						<Link
 							href="#takeaway"
-							className={activeLink === "takeaway" ? "text-neutral-300" : ""}
+							className={
+								activeLink === "takeaway" ? "text-neutral-300 activeLink" : ""
+							}
 						>
 							takeaway
 						</Link>
 					</li>
 				</ul>
 			</div>
-			<div className="flex flex-col gap-6 pt-4 md:pt-32 pb-16 md:max-w-lg lg:max-w-xl text-neutral-400 text-sm lowercase">
+			<div className="flex flex-col gap-6 pt-4 md:pt-32 pb-16 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
+				<Image
+					src={home04}
+					alt="Sequence of many of the UI components used within Heartbeat"
+					priority={false}
+					className="max-w-4xl my-6"
+				></Image>
 				<h1 className="text-neutral-100">heartbeat</h1>
 				<h2 id="what-is-heartbeat">what is heartbeat?</h2>
 				<p>
@@ -178,6 +207,7 @@ export default function Home() {
 					src={heartbeat01}
 					alt="A grid showcasing a list of all the features we shipped at Heartbeat. The full list: re-designed desktop experience, payments, mobile app, courses, groups, events, search, community cusdtomization, video calls, weekly digests, embeds, analytics, kickstart (onboarding), custom domains, upsells, invitations, chats, polls."
 					priority={false}
+					className="my-6"
 				></Image>
 				<p>
 					These ultimately contributed to our company&apos;s growth by growing
@@ -198,6 +228,7 @@ export default function Home() {
 					src={heartbeat02}
 					alt="Sequence of many of the UI components used within Heartbeat"
 					priority={false}
+					className="my-6"
 				></Image>
 				<p>
 					Both community admins and their members prefer friendliness and easy
@@ -216,6 +247,7 @@ export default function Home() {
 					src={heartbeat03}
 					alt="A sequence of the different navigation sidebars across product areas and devices sizes"
 					priority={false}
+					className="my-6"
 				></Image>
 				<p>
 					The component library standardized our different product sections.
@@ -228,6 +260,7 @@ export default function Home() {
 					src={heartbeat04}
 					alt="Showing the Heartbeat UI of the embed card across desktop and mobile"
 					priority={false}
+					className="my-6"
 				></Image>
 				<h2 id="documentation">Documentation</h2>
 				<p>
@@ -286,6 +319,7 @@ export default function Home() {
 					src={heartbeat05}
 					alt="Screen capture shows a pointer icon selects interacts and selects filters without any search terms being entered in through the keyboard, demonstrating use of the search feature with only a mouse"
 					priority={false}
+					className="my-6"
 				></Image>
 				<p>
 					while we generally want to avoid excessive variants on any component,
@@ -311,6 +345,7 @@ export default function Home() {
 					src={heartbeat06}
 					alt="Screen capture shows a user using search using keystrokes, with their keystrokes appearing with each key press"
 					priority={false}
+					className="my-6"
 				></Image>
 				<p>
 					I generally try to be pretty sparse with variants here on this high of
@@ -329,6 +364,7 @@ export default function Home() {
 					src={heartbeat07}
 					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
 					priority={false}
+					className="my-6"
 				></Image>
 				<p>
 					however, when we nest even further subcomponents into those, we may be
@@ -352,7 +388,7 @@ export default function Home() {
 					usable, and easier to maintain.
 				</p>
 			</div>
-			<footer className="pb-32 w-full md:max-w-lg lg:max-w-xl ">
+			<footer className="pb-56 w-full md:max-w-lg lg:max-w-xl xl:max-w-2xl ">
 				<p>
 					<Link href="/" className="w-full hover:underline">
 						← back

@@ -9,6 +9,11 @@ import tokens03 from "@/public/tokens03.png";
 import tokens04 from "@/public/tokens04.gif";
 import tokens05 from "@/public/tokens05.png";
 import tokens06 from "@/public/tokens06.png";
+import tokens07 from "@/public/tokens07.gif";
+import tokens08 from "@/public/tokens08.png";
+import tokens09 from "@/public/tokens09.png";
+import tokens10 from "@/public/tokens10.png";
+import tokens11 from "@/public/tokens11.png";
 import { useEffect, useState, useRef } from "react";
 
 function useHighlighted() {
@@ -58,7 +63,9 @@ export default function Home() {
 					<li>
 						<Link
 							href="#background"
-							className={activeLink === "background" ? "text-neutral-300" : ""}
+							className={
+								activeLink === "background" ? "text-neutral-300 activeLink" : ""
+							}
 						>
 							background
 						</Link>
@@ -66,7 +73,9 @@ export default function Home() {
 					<li>
 						<Link
 							href="#research"
-							className={activeLink === "research" ? "text-neutral-300" : ""}
+							className={
+								activeLink === "research" ? "text-neutral-300 activeLink" : ""
+							}
 						>
 							research
 						</Link>
@@ -75,7 +84,9 @@ export default function Home() {
 						<Link
 							href="#creating-the-colors"
 							className={
-								activeLink === "creating-the-colors" ? "text-neutral-300" : ""
+								activeLink === "creating-the-colors"
+									? "text-neutral-300 activeLink"
+									: ""
 							}
 						>
 							creating the colors
@@ -85,7 +96,9 @@ export default function Home() {
 						<Link
 							href="#testing-and-feedback"
 							className={
-								activeLink === "testing-and-feedback" ? "text-neutral-300" : ""
+								activeLink === "testing-and-feedback"
+									? "text-neutral-300 activeLink"
+									: ""
 							}
 						>
 							testing and feedback
@@ -95,7 +108,9 @@ export default function Home() {
 						<Link
 							href="#final-design"
 							className={
-								activeLink === "final-design" ? "text-neutral-300" : ""
+								activeLink === "final-design"
+									? "text-neutral-300 activeLink"
+									: ""
 							}
 						>
 							final design
@@ -105,7 +120,9 @@ export default function Home() {
 						<Link
 							href="#retrospective"
 							className={
-								activeLink === "retrospective" ? "text-neutral-300" : ""
+								activeLink === "retrospective"
+									? "text-neutral-300 activeLink"
+									: ""
 							}
 						>
 							retrospective
@@ -118,7 +135,7 @@ export default function Home() {
 					src={home01}
 					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
 					priority={false}
-					className="xl:max-w-4xl mb-6 mt-6"
+					className="xl:max-w-4xl my-6"
 				></Image>
 				<h1 className="text-neutral-100">Squarespace Color Tokens</h1>
 				<p>
@@ -147,13 +164,13 @@ export default function Home() {
 						src={tokens01}
 						alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
 						priority={false}
-						className="xl:max-w-4xl mb-0"
+						className="xl:max-w-2xl mb-0"
 					></Image>
-					<caption className="w-full text-left">
+					<p className="text-xs text-neutral-500 w-full text-left">
 						(Left) the existing color tokens being used as a smart guide, but
 						gets lost in different user content. (Right) New, one-off color
 						exploration for a brighter color that better fits UI usage.
-					</caption>
+					</p>
 				</div>
 				<p>
 					However, new features and patterns in the product like Fluid Engine
@@ -171,12 +188,12 @@ export default function Home() {
 						src={tokens02}
 						alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
 						priority={false}
-						className="xl:max-w-4xl"
+						className="xl:max-w-2xl"
 					></Image>
-					<caption className="w-full text-left">
+					<p className="text-xs text-neutral-500 w-full text-left">
 						(Left) Existing color ramps (Right) Tweaking just individual color
 						ramps to satisfy consumer requests would disrupt the larger system.
-					</caption>
+					</p>
 				</div>
 				<p>
 					As we started to investigate the problem, we started to think about
@@ -200,16 +217,15 @@ export default function Home() {
 				</p>
 				<p>
 					Next, we researched human perception of colors and perceptually
-					uniform color spaces to systemically compose our color ramps. We
-					learned that using LCH (and OKLCH) was probably the best color space
-					for our needs. In these adjusting hue across colors had less perceived
-					brightness variations.
+					uniform color spaces to systemically compose our color ramps. Through
+					this, we learned using LCH (and OKLCH) would minimize perceived
+					brightness differences but preserve contrast when adjusting hue.
 				</p>
 				<Image
 					src={tokens03}
 					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
 					priority={false}
-					className="xl:max-w-4xl mb-6 mt-6"
+					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
 				<p>
 					Finally, we examined our designers and engineers&apos; workflows and
@@ -233,7 +249,7 @@ export default function Home() {
 					src={tokens04}
 					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
 					priority={false}
-					className="xl:max-w-4xl mb-6 mt-6"
+					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
 				<p>
 					Steps on the ramp were based on both contrast against our lightest
@@ -252,7 +268,7 @@ export default function Home() {
 					src={tokens05}
 					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
 					priority={false}
-					className="xl:max-w-4xl mb-6 mt-6"
+					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
 				<p>
 					We also added more colors beyond the main semantic colors for data
@@ -266,12 +282,24 @@ export default function Home() {
 					to halation and visual fatigue. But we still maintained our highest
 					levels of accessibility.
 				</p>
+				<Image
+					src={tokens11}
+					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					priority={false}
+					className="xl:max-w-2xl mb-6 mt-6"
+				></Image>
 				<p>
 					Next was rigorously testing these colors against existing and future
 					designs to ensure colors met every need. Prototyping helped me
 					maintain sanity and move forward, as colors which didn&apos;t have as
 					much of a definitive &quot;correct&quot; design solution.
 				</p>
+				<Image
+					src={tokens07}
+					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					priority={false}
+					className="xl:max-w-2xl mb-6 mt-6"
+				></Image>
 				<p>
 					We explored different naming schemas to find one that best sorted and
 					implied their intended use. We knew these tokens would be critical if
@@ -285,16 +313,25 @@ export default function Home() {
 					src={tokens06}
 					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
 					priority={false}
-					className="xl:max-w-4xl mb-6 mt-6"
+					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
 				<h2 id="testing-and-feedback">Testing and feedback</h2>
 				<p>
 					As part of the rollout, we updated our documentation on colors and
 					usage guidelines. We then tested our system with a Beta flag for
-					engineers and designers. We asked consumers to reviewthe updated
-					documentation, use the colors in their explorations or new projects,
-					and gave them a few weeks to test out the system. At the end of the
-					Beta, we asked consumers to fill out a form that asked:
+					engineers and designers.
+				</p>
+				<Image
+					src={tokens08}
+					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					priority={false}
+					className="xl:max-w-2xl mb-6 mt-6"
+				></Image>
+				<p>
+					We asked consumers to review the updated documentation, use the colors
+					in their explorations or new projects, and gave them a few weeks to
+					test out the system. At the end of the Beta, we asked consumers to
+					fill out a form that asked:
 				</p>
 				<ol className="flex flex-col list-decimal gap-2">
 					<li>how does using this system feel vs the previous system?</li>
@@ -305,40 +342,55 @@ export default function Home() {
 					</li>
 				</ol>
 				<p>
-					We got feedback that clean up usage guidance on certain system
-					messaging components and the where to use the new expanded colors.
+					Based on feedback, we created more guidance on the use of color on
+					certain system messaging components and where to use the new expanded
+					colors.
 				</p>
-				<h2 id="#final-design">Final design</h2>
+				<Image
+					src={tokens09}
+					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					priority={false}
+					className="xl:max-w-2xl mb-6 mt-6"
+				></Image>
+				<h2 id="final-design">Final design</h2>
 				<p>
 					We ultimately ended up shipping this project in early 2023 as a major
-					version bump for all of our consumers.
+					version bump. These color tokens are now in use across major SQSP
+					surfaces for all of our consumers.
 				</p>
-				<p>
-					Rollout wasn&apos;t perfect; we continued to monitor responses from
-					consumers around documentation and usage. We often got support
-					questions around the usage of color and discrepancies on existing
-					components in certain product areas.
-				</p>
-				<p>
-					These color tokens are now across use in SQSP from teams that span
-					from the Editor, Commerce (selling tools and pages), Invoicing,
-					Emails, Marketing, and even into Acuity (an acquisition which is not a
-					direct design system consumer.)
-				</p>
+				<Image
+					src={tokens10}
+					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					priority={false}
+					className="xl:max-w-2xl mb-6 mt-6"
+				></Image>
 				<p>
 					We received positive feedback from designers and enigneers alike,
 					supporting more expressive and features and design patterns as SQSP
 					continues to grow in depth and complexity of its offerings.
 				</p>
-				<h2 id="#retrospective">Retrospective</h2>
+				<h2 id="retrospective">Retrospective</h2>
 				<p>
-					Rollout wasn&apos;t perfect; we continued to monitor responses from
-					consumers around documentation and usage. We often got support
-					questions around the usage of color and discrepancies on existing
-					components in certain product areas.
+					I definitely didn&apos;t design the perfect rollout. From this
+					project, I&apos;ve learned a lot about the value of communication,
+					documentation and guidance, partnerships with our consumers, and
+					adjusting for consumer workflows as a platform team member. These are
+					now fundamental steps in my rollout process; half the challenge of any
+					impactful release.
+				</p>
+				<p>
+					As for this project, we&apos;ve continued to monitor responses from
+					consumers around color. We get few support questions, but provide
+					regularly guidance around the usage of color.
+				</p>
+				<p>
+					Several months after our initial release, our initial bets on building
+					for the future seem to have been for the better, as new work from
+					designers continue to utilize the framework of color we&apos;ve
+					provided.
 				</p>
 			</div>
-			<footer className="pb-32 w-full md:max-w-lg lg:max-w-xl xl:max-w-2xl ">
+			<footer className="pb-56 w-full md:max-w-lg lg:max-w-xl xl:max-w-2xl ">
 				<p>
 					<Link href="/" className="w-full hover:underline">
 						← back

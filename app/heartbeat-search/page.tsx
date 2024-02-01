@@ -29,7 +29,7 @@ function useHighlighted() {
 			rootMargin: "0% 0% -45% 0px",
 		});
 
-		const headings = document.querySelectorAll("h2, h3, h4");
+		const headings = document.querySelectorAll("h1, h2, h3, h4");
 		headings.forEach((heading) => {
 			if (observer.current) {
 				observer.current.observe(heading);
@@ -60,7 +60,9 @@ export default function Home() {
 						<Link
 							href="#three-considerations"
 							className={
-								activeLink === "three-considerations" ? "text-neutral-300" : ""
+								activeLink === "three-considerations"
+									? "text-neutral-300 activeLink"
+									: ""
 							}
 						>
 							three considerations
@@ -69,7 +71,11 @@ export default function Home() {
 					<li>
 						<Link
 							href="#early-looks"
-							className={activeLink === "early-looks" ? "text-neutral-300" : ""}
+							className={
+								activeLink === "early-looks"
+									? "text-neutral-300 activeLink"
+									: ""
+							}
 						>
 							early looks
 						</Link>
@@ -79,7 +85,7 @@ export default function Home() {
 							href="#creating-a-guided-experience"
 							className={
 								activeLink === "creating-a-guided-experience"
-									? "text-neutral-300"
+									? "text-neutral-300 activeLink"
 									: ""
 							}
 						>
@@ -90,7 +96,9 @@ export default function Home() {
 						<Link
 							href="#input-details"
 							className={
-								activeLink === "input-details" ? "text-neutral-300" : ""
+								activeLink === "input-details"
+									? "text-neutral-300 activeLink"
+									: ""
 							}
 						>
 							input details
@@ -101,7 +109,7 @@ export default function Home() {
 							href="#ranking-search-results"
 							className={
 								activeLink === "ranking-search-results"
-									? "text-neutral-300"
+									? "text-neutral-300 activeLink"
 									: ""
 							}
 						>
@@ -111,7 +119,9 @@ export default function Home() {
 					<li>
 						<Link
 							href="#whats-next"
-							className={activeLink === "whats-next" ? "text-neutral-300" : ""}
+							className={
+								activeLink === "whats-next" ? "text-neutral-300 activeLink" : ""
+							}
 						>
 							what&apos;s next?
 						</Link>
@@ -123,7 +133,7 @@ export default function Home() {
 					src={home03}
 					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
 					priority={false}
-					className="xl:max-w-4xl"
+					className="xl:max-w-4xl my-6"
 				></Image>
 				<h1 className="text-neutral-100">heartbeat search</h1>
 				<p>
@@ -169,7 +179,7 @@ export default function Home() {
 					src={search01}
 					alt="Two different UIs, one with a larger text input that is labeled 'Command K, Navigation between channels' and the other with a smaller text input labeled 'Command Slash, Navigation within channels'"
 					priority={false}
-					className="xl:max-w-4xl"
+					className="my-6"
 				></Image>
 				<p>
 					But having two separate menus became complicated for users who had to
@@ -182,7 +192,7 @@ export default function Home() {
 					src={search02}
 					alt="The Heartbeat UI showing a condensed text input with suggestion prompts that read 'I'm looking for...' and options like 'Messages,' 'People,' and 'Channels'"
 					priority={false}
-					className="xl:max-w-4xl"
+					className="my-6"
 				></Image>
 				<h2 id="creating-a-guided-experience">Creating a guided experience</h2>
 				<p>
@@ -199,7 +209,7 @@ export default function Home() {
 					src={search03}
 					alt="Search function shown in use; the initial search asks user what they're searching for, and as the user enters options like 'Messages' it asks for further filters like 'in: channel.' As the user selects this, it populates a list of channels to search within."
 					priority={false}
-					className="xl:max-w-4xl"
+					className="my-6"
 				></Image>
 				<p>
 					On the other hand, we wanted to make sure that this wasn&apos;t a
@@ -219,7 +229,7 @@ export default function Home() {
 					src={search04}
 					alt="Search function shown in use, but this time the user has an initial query already entered, then enters the search filters"
 					priority={false}
-					className="xl:max-w-4xl"
+					className="my-6"
 				></Image>
 				<h2 id="input-details">Input details</h2>
 				<p>
@@ -237,7 +247,7 @@ export default function Home() {
 					src={search05}
 					alt="Screen capture shows a pointer icon selects interacts and selects filters without any search terms being entered in through the keyboard, demonstrating use of the search feature with only a mouse"
 					priority={false}
-					className="xl:max-w-4xl"
+					className="my-6"
 				></Image>
 				<p>
 					For keyboard users, we used colons to complete search filter terms and
@@ -249,7 +259,7 @@ export default function Home() {
 					src={search06}
 					alt="Screen capture shows a user using search using keystrokes, with their keystrokes appearing with each key press"
 					priority={false}
-					className="xl:max-w-4xl"
+					className="my-6"
 				></Image>
 				<h2 id="ranking-search-results">Ranking search results</h2>
 				<p>
@@ -271,7 +281,7 @@ export default function Home() {
 					src={search07}
 					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
 					priority={false}
-					className="xl:max-w-4xl"
+					className="my-6"
 				></Image>
 				<p>
 					Our sorting was based largely on entities (e.g. weighting an event
@@ -302,7 +312,7 @@ export default function Home() {
 					within their community - even as communities continue to grow.
 				</p>
 			</div>
-			<footer className="pb-32 w-full md:max-w-lg lg:max-w-xl ">
+			<footer className="pb-56 w-full md:max-w-lg lg:max-w-xl xl:max-w-2xl">
 				<p>
 					<Link href="/" className="w-full hover:underline">
 						← back

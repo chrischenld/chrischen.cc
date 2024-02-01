@@ -107,3 +107,9 @@ footer a {
 		text-wrap: balance;
 	}
 }
+
+.activeLink::before {
+	content: "→";
+	position: absolute;
+	left: -1rem;
+}

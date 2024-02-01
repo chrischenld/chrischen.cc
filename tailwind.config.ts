@@ -40,7 +40,7 @@ const config: Config = {
 			lg: "1124px",
 			// => @media (min-width: 1024px) { ... }
 
-			xl: "1440px",
+			xl: "1600px",
 			// => @media (min-width: 1280px) { ... }
 
 			// "2xl": "1536px",
