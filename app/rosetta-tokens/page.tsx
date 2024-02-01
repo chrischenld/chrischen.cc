@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import search01 from "@/public/search01.webp";
-import search02 from "@/public/search02.webp";
-import search03 from "@/public/search03.gif";
-import search04 from "@/public/search04.gif";
-import search05 from "@/public/search05.gif";
-import search06 from "@/public/search06.gif";
-import search07 from "@/public/search07.webp";
+import home01 from "@/public/home01.png";
+import tokens01 from "@/public/tokens01.png";
+import tokens02 from "@/public/tokens02.png";
+import tokens03 from "@/public/tokens03.png";
+import tokens04 from "@/public/tokens04.gif";
+import tokens05 from "@/public/tokens05.png";
+import tokens06 from "@/public/tokens06.png";
 import { useEffect, useState, useRef } from "react";
 
 function useHighlighted() {
@@ -28,7 +28,7 @@ function useHighlighted() {
 			rootMargin: "0% 0% -45% 0px",
 		});
 
-		const headings = document.querySelectorAll("h2, h3, h4");
+		const headings = document.querySelectorAll("h1, h2, h3, h4");
 		headings.forEach((heading) => {
 			if (observer.current) {
 				observer.current.observe(heading);
@@ -83,26 +83,22 @@ export default function Home() {
 					</li>
 					<li>
 						<Link
-							href="#testing-and-validation"
+							href="#testing-and-feedback"
 							className={
-								activeLink === "testing-and-validation"
-									? "text-neutral-300"
-									: ""
+								activeLink === "testing-and-feedback" ? "text-neutral-300" : ""
 							}
 						>
-							testing and validation
+							testing and feedback
 						</Link>
 					</li>
 					<li>
 						<Link
-							href="#final-design-and-impact"
+							href="#final-design"
 							className={
-								activeLink === "final-design-and-impact"
-									? "text-neutral-300"
-									: ""
+								activeLink === "final-design" ? "text-neutral-300" : ""
 							}
 						>
-							final design and impact
+							final design
 						</Link>
 					</li>
 					<li>
@@ -117,25 +113,28 @@ export default function Home() {
 					</li>
 				</ul>
 			</div>
-			<div className="flex flex-col gap-6 pt-4 md:pt-32 pb-16 md:max-w-lg lg:max-w-xl text-neutral-400 text-sm lowercase">
-				<h1 className="text-neutral-100">Rosetta Color Tokens</h1>
+			<div className="flex flex-col gap-6 pt-4 md:pt-32 pb-16 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
+				<Image
+					src={home01}
+					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					priority={false}
+					className="xl:max-w-4xl mb-6 mt-6"
+				></Image>
+				<h1 className="text-neutral-100">Squarespace Color Tokens</h1>
 				<p>
-					Squarespace has grown from being just a website builder to being a
-					platform to sell anything.
-				</p>
-				<p>
-					Our design system, Rosetta, had color tokens that weren&apos;t
-					supporting designer needs and emerging patterns.
+					Squarespace has grown from being just a website builder into a
+					platform to sell anything. But the existing colors from our design
+					system, Rosetta, weren&apos;t supporting new patterns and features.
 				</p>
 				<p>
 					I led the design of the new and current color token system for
 					Rosetta, SQSP&apos;s design system.
 				</p>
 				<p>
-					My engineering partner Faustine Pollet worked closely with me and
-					handled implementation. Teammates on Design Platform provided critical
-					feedback to shipping this project, including my design manager John
-					Meguerian and staff designer John Voss.
+					My engineering partner Faustine Pollet worked on implementation.
+					Teammates on Design Platform provided critical feedback to shipping
+					this project, including my design manager John Meguerian and staff
+					designer John Voss.
 				</p>
 				<h2 id="background">Background</h2>
 				<p>
@@ -143,22 +142,54 @@ export default function Home() {
 					leaned on a monochromatic palette and dull colors. This shifted focus
 					away from the the app chrome and onto user websites and content.
 				</p>
+				<div className="flex flex-col gap-3 mb-6 mt-6">
+					<Image
+						src={tokens01}
+						alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+						priority={false}
+						className="xl:max-w-4xl mb-0"
+					></Image>
+					<caption className="w-full text-left">
+						(Left) the existing color tokens being used as a smart guide, but
+						gets lost in different user content. (Right) New, one-off color
+						exploration for a brighter color that better fits UI usage.
+					</caption>
+				</div>
 				<p>
 					However, new features and patterns in the product like Fluid Engine
-					(drag and drop editor) and onto interface heavy features like
-					payments, campaigns, and invoicing required &quot;bright&quot; colors
-					that stand out from user generated content.
+					(drag and drop editor) and data-heavy interfaces like payments,
+					campaigns, and invoicing required &quot;bright&quot; colors that stand
+					out from user generated content.
 				</p>
 				<p>
-					Product partners requested &quot;bright&quot; colors but risked
-					disrupting the existing color system. This resulted in one-offs color
-					assignments, which degraded the utility of Rosetta.
+					Product partners requested &quot;bright&quot; colors but these updates
+					risked disrupting the existing color system. This resulted in one-offs
+					color assignments, which degraded the utility of Rosetta.
 				</p>
+				<div className="flex flex-col gap-3 mb-6 mt-6">
+					<Image
+						src={tokens02}
+						alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+						priority={false}
+						className="xl:max-w-4xl"
+					></Image>
+					<caption className="w-full text-left">
+						(Left) Existing color ramps (Right) Tweaking just individual color
+						ramps to satisfy consumer requests would disrupt the larger system.
+					</caption>
+				</div>
 				<p>
 					As we started to investigate the problem, we started to think about
 					better design futures and raising the bar, beyond just changing color
-					values.
+					values:
 				</p>
+				<ul className="flex flex-col list-disc gap-2">
+					<li>
+						how could we use semantic naming to make color use more intuitive?
+					</li>
+					<li>how do we make a cohesive scale of colors?</li>
+					<li>how could we improve consumer workflows?</li>
+				</ul>
 				<h2 id="research">Research</h2>
 				<p>
 					First, we audited different design systems - in particular, we were
@@ -174,6 +205,12 @@ export default function Home() {
 					for our needs. In these adjusting hue across colors had less perceived
 					brightness variations.
 				</p>
+				<Image
+					src={tokens03}
+					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					priority={false}
+					className="xl:max-w-4xl mb-6 mt-6"
+				></Image>
 				<p>
 					Finally, we examined our designers and engineers&apos; workflows and
 					how they used colors. We did a lit review of old dusty files from past
@@ -192,6 +229,12 @@ export default function Home() {
 					their prominent roles in the product as the primary brand color. From
 					there, we could start to fill in the ramp.
 				</p>
+				<Image
+					src={tokens04}
+					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					priority={false}
+					className="xl:max-w-4xl mb-6 mt-6"
+				></Image>
 				<p>
 					Steps on the ramp were based on both contrast against our lightest
 					background, but also relative contrast against other steps on the
@@ -205,6 +248,12 @@ export default function Home() {
 					backgrounds, borders) and use the same stops to fill UI element and
 					color contrast needs.
 				</p>
+				<Image
+					src={tokens05}
+					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					priority={false}
+					className="xl:max-w-4xl mb-6 mt-6"
+				></Image>
 				<p>
 					We also added more colors beyond the main semantic colors for data
 					visualization (charts in analytics) or differentiation (different
@@ -232,32 +281,34 @@ export default function Home() {
 					month before the variable feature release in Figma, which we later got
 					back and adopted.)
 				</p>
-				<h2 id="testing-and-validation">Testing and validation</h2>
+				<Image
+					src={tokens06}
+					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					priority={false}
+					className="xl:max-w-4xl mb-6 mt-6"
+				></Image>
+				<h2 id="testing-and-feedback">Testing and feedback</h2>
 				<p>
 					As part of the rollout, we updated our documentation on colors and
 					usage guidelines. We then tested our system with a Beta flag for
 					engineers and designers. We asked consumers to reviewthe updated
 					documentation, use the colors in their explorations or new projects,
-					and gave them a few weeks to test out the system.
-				</p>
-				<p>
-					At the end of the Beta, we asked consumers to fill out a form that
-					asked:
+					and gave them a few weeks to test out the system. At the end of the
+					Beta, we asked consumers to fill out a form that asked:
 				</p>
 				<ol className="flex flex-col list-decimal gap-2">
-					<li>how the system performed vs the previous system</li>
-					<li>how clear the documentation and usage guidelines were</li>
-					<li>how the styles were organized in their tools of choice</li>
+					<li>how does using this system feel vs the previous system?</li>
+					<li>are the documentation and usage guidelines clear?</li>
+					<li>was the organization of color in Figma or in code?</li>
 					<li>
-						how much this new system would meet the needs of upcoming and future
-						designs
+						would these colors meet the needs of upcoming and future designs
 					</li>
 				</ol>
 				<p>
 					We got feedback that clean up usage guidance on certain system
 					messaging components and the where to use the new expanded colors.
 				</p>
-				<h2 id="#final-design-and-impact">Final design and impact</h2>
+				<h2 id="#final-design">Final design</h2>
 				<p>
 					We ultimately ended up shipping this project in early 2023 as a major
 					version bump for all of our consumers.
@@ -286,13 +337,8 @@ export default function Home() {
 					questions around the usage of color and discrepancies on existing
 					components in certain product areas.
 				</p>
-				<Image
-					src={search07}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
-					priority={false}
-				></Image>
 			</div>
-			<footer className="pb-32 w-full md:max-w-lg lg:max-w-xl ">
+			<footer className="pb-32 w-full md:max-w-lg lg:max-w-xl xl:max-w-2xl ">
 				<p>
 					<Link href="/" className="w-full hover:underline">
 						← back

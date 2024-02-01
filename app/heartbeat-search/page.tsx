@@ -9,6 +9,7 @@ import search04 from "@/public/search04.gif";
 import search05 from "@/public/search05.gif";
 import search06 from "@/public/search06.gif";
 import search07 from "@/public/search07.webp";
+import home03 from "@/public/home03.png";
 import { useEffect, useState, useRef } from "react";
 
 function useHighlighted() {
@@ -117,7 +118,13 @@ export default function Home() {
 					</li>
 				</ul>
 			</div>
-			<div className="flex flex-col gap-6 pt-4 md:pt-32 pb-16 md:max-w-lg lg:max-w-xl text-neutral-400 text-sm lowercase">
+			<div className="flex flex-col gap-6 pt-4 md:pt-32 pb-16 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
+				<Image
+					src={home03}
+					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					priority={false}
+					className="xl:max-w-4xl"
+				></Image>
 				<h1 className="text-neutral-100">heartbeat search</h1>
 				<p>
 					(Adapted from a Heartbeat blog post at the time of our Search feature
@@ -162,6 +169,7 @@ export default function Home() {
 					src={search01}
 					alt="Two different UIs, one with a larger text input that is labeled 'Command K, Navigation between channels' and the other with a smaller text input labeled 'Command Slash, Navigation within channels'"
 					priority={false}
+					className="xl:max-w-4xl"
 				></Image>
 				<p>
 					But having two separate menus became complicated for users who had to
@@ -174,6 +182,7 @@ export default function Home() {
 					src={search02}
 					alt="The Heartbeat UI showing a condensed text input with suggestion prompts that read 'I'm looking for...' and options like 'Messages,' 'People,' and 'Channels'"
 					priority={false}
+					className="xl:max-w-4xl"
 				></Image>
 				<h2 id="creating-a-guided-experience">Creating a guided experience</h2>
 				<p>
@@ -190,6 +199,7 @@ export default function Home() {
 					src={search03}
 					alt="Search function shown in use; the initial search asks user what they're searching for, and as the user enters options like 'Messages' it asks for further filters like 'in: channel.' As the user selects this, it populates a list of channels to search within."
 					priority={false}
+					className="xl:max-w-4xl"
 				></Image>
 				<p>
 					On the other hand, we wanted to make sure that this wasn&apos;t a
@@ -209,6 +219,7 @@ export default function Home() {
 					src={search04}
 					alt="Search function shown in use, but this time the user has an initial query already entered, then enters the search filters"
 					priority={false}
+					className="xl:max-w-4xl"
 				></Image>
 				<h2 id="input-details">Input details</h2>
 				<p>
@@ -226,6 +237,7 @@ export default function Home() {
 					src={search05}
 					alt="Screen capture shows a pointer icon selects interacts and selects filters without any search terms being entered in through the keyboard, demonstrating use of the search feature with only a mouse"
 					priority={false}
+					className="xl:max-w-4xl"
 				></Image>
 				<p>
 					For keyboard users, we used colons to complete search filter terms and
@@ -237,6 +249,7 @@ export default function Home() {
 					src={search06}
 					alt="Screen capture shows a user using search using keystrokes, with their keystrokes appearing with each key press"
 					priority={false}
+					className="xl:max-w-4xl"
 				></Image>
 				<h2 id="ranking-search-results">Ranking search results</h2>
 				<p>
@@ -258,6 +271,7 @@ export default function Home() {
 					src={search07}
 					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
 					priority={false}
+					className="xl:max-w-4xl"
 				></Image>
 				<p>
 					Our sorting was based largely on entities (e.g. weighting an event
