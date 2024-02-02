@@ -55,6 +55,14 @@ h2 {
 	margin-top: 4rem;
 }
 
+h3 {
+	color: #e5e5e5;
+	/* color: #a3a3a3; */
+	scroll-margin-top: 8rem;
+	letter-spacing: 0.05rem;
+	margin-top: 4rem;
+}
+
 h2,
 h3,
 h4,
@@ -64,6 +72,10 @@ h6 {
 	text-transform: uppercase;
 	line-height: 1.8;
 	width: 100%;
+}
+
+h2 + h3 {
+	margin-top: 2rem;
 }
 
 a {
@@ -92,10 +104,9 @@ caption {
 	color: #737373;
 }
 
-/* img {
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-} */
+footer {
+	margin-top: 4rem;
+}
 
 footer a {
 	font-size: 0.75rem;
@@ -112,4 +123,15 @@ footer a {
 	content: "→";
 	position: absolute;
 	left: -1rem;
+}
+
+.name {
+	font-family: var(--font-pantasia);
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: -0.01rem;
+}
+
+.kerned {
+	font-kerning: auto;
 }

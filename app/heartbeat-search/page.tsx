@@ -50,8 +50,8 @@ export default function Home() {
 	const activeLink = useHighlighted();
 
 	return (
-		<main className="flex flex-col px-2 pt-4 md:p-0 gap-4 min-h-screen items-center">
-			<p className="w-full h-fit md:fixed md:min-w-16 inset-y-8 md:left-8 font-pantasia uppercase text-neutral-400">
+		<main className="flex flex-col md:p-0 gap-4 min-h-screen items-center">
+			<p className="p-2 md:p-0 md:fixed md:left-6 md:top-0.75 text-neutral-600 hover:text-neutral-400 name">
 				<Link href="/">chris chen</Link>
 			</p>
 			<div className="md:fixed hidden lg:block min-w-16 inset-y-32 lg:right-12 text-xs text-neutral-600">
@@ -128,7 +128,7 @@ export default function Home() {
 					</li>
 				</ul>
 			</div>
-			<div className="flex flex-col gap-6 pt-4 md:pt-32 pb-16 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
+			<div className="flex flex-col gap-6 pt-4 md:pt-32 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
 				<Image
 					src={home03}
 					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"

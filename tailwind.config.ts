@@ -13,10 +13,7 @@ const config: Config = {
 			sm: "0.875rem",
 			base: "1rem",
 			xl: "1.25rem",
-			"2xl": "1.563rem",
-			"3xl": "1.953rem",
-			"4xl": "2.441rem",
-			"5xl": "3.052rem",
+			"3.5xl": "2rem",
 		},
 		extend: {
 			height: {
@@ -24,6 +21,15 @@ const config: Config = {
 				"128": "32rem",
 				"136": "34rem",
 				"144": "36rem",
+			},
+			width: {
+				"112": "28rem",
+				"128": "32rem",
+				"136": "34rem",
+				"144": "36rem",
+			},
+			inset: {
+				"0.75": "0.1875rem",
 			},
 			fontFamily: {
 				fragmentMono: ["var(--font-fragment-mono)"],

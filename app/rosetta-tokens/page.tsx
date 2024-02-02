@@ -54,8 +54,8 @@ export default function Home() {
 	const activeLink = useHighlighted();
 
 	return (
-		<main className="flex flex-col px-2 pt-4 md:p-0 gap-4 min-h-screen items-center">
-			<p className="w-full h-fit md:fixed md:min-w-16 inset-y-8 md:left-8 uppercase text-neutral-400">
+		<main className="flex flex-col md:p-0 gap-4 min-h-screen items-center">
+			<p className="p-2 md:p-0 md:fixed md:left-6 md:top-0.75 text-neutral-600 hover:text-neutral-400 name">
 				<Link href="/">chris chen</Link>
 			</p>
 			<div className="md:fixed hidden lg:block min-w-16 inset-y-32 lg:right-12 text-xs text-neutral-600">
@@ -130,10 +130,10 @@ export default function Home() {
 					</li>
 				</ul>
 			</div>
-			<div className="flex flex-col gap-6 pt-4 md:pt-32 pb-16 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
+			<div className="flex flex-col gap-6 pt-4 md:pt-32 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
 				<Image
 					src={home01}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					alt="Two images showing the light and dark theme full color palettes for Squarespace's design system"
 					priority={false}
 					className="xl:max-w-4xl my-6"
 				></Image>
@@ -162,7 +162,7 @@ export default function Home() {
 				<div className="flex flex-col gap-3 mb-6 mt-6">
 					<Image
 						src={tokens01}
-						alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+						alt="A side-by-side of Squarespace's drag-and-drop smart guides around a user image, the one on the left using the old color tokens, the one on the right using the new color tokens. The one on the right stands out more against the user's image"
 						priority={false}
 						className="xl:max-w-2xl mb-0"
 					></Image>
@@ -186,7 +186,7 @@ export default function Home() {
 				<div className="flex flex-col gap-3 mb-6 mt-6">
 					<Image
 						src={tokens02}
-						alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+						alt="A side-by-side of two color palettes, red, green, blue, orange, and pink color ramps. The right one has only adjusted the blue ramp, and it doesn't visually match with the rest of the palette"
 						priority={false}
 						className="xl:max-w-2xl"
 					></Image>
@@ -223,7 +223,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={tokens03}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					alt="Not perceptually uniform: RGB, HSL. Percentually uniform: LCH"
 					priority={false}
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
@@ -247,7 +247,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={tokens04}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					alt="Animated GIF showing the gray ramp being 'filled in' by a couple values at a time"
 					priority={false}
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
@@ -266,7 +266,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={tokens05}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					alt="A very small, zoomed out spec of all of the colors and color roles"
 					priority={false}
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
@@ -284,7 +284,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={tokens11}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					alt="Light and dark theme palettes, completed"
 					priority={false}
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
@@ -296,7 +296,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={tokens07}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					alt="Animated GIF of colored UI elements and surfaces getting overlaid on top of each other chaotically and rotated askew"
 					priority={false}
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
@@ -311,7 +311,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={tokens06}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					alt="A diagram showing the possible values from the naming schema for color tokens. Each slot in the schema is labeled: Role, Sentiment, Prominence"
 					priority={false}
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
@@ -323,7 +323,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={tokens08}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					alt="Image of the Beta that was shown to designers"
 					priority={false}
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
@@ -348,7 +348,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={tokens09}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					alt="Screenshot of the color documentation found on our docsite"
 					priority={false}
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
@@ -360,7 +360,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={tokens10}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					alt="Positive comments left by consumers regarding the release of the new colors"
 					priority={false}
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
