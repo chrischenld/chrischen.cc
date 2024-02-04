@@ -15,6 +15,9 @@ const config: Config = {
 			xl: "1.25rem",
 			"3.5xl": "2rem",
 		},
+		borderRadius: {
+			xs: "0.0625rem",
+		},
 		extend: {
 			height: {
 				"112": "28rem",
