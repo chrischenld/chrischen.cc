@@ -1,4 +1,3 @@
-// api/route.ts
 import { serialize } from "cookie";
 
 export async function POST(request: Request, params: { slug: string }) {
@@ -8,8 +7,6 @@ export async function POST(request: Request, params: { slug: string }) {
 		httpOnly: true,
 		path: "/",
 	});
-
-	console.log(password);
 
 	if (process.env.PAGE_PASSWORD !== password) {
 		return new Response("incorrect password", {

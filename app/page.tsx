@@ -73,6 +73,7 @@ export default function Home() {
 								alt="Two images showing the light and dark theme full color palettes for Squarespace's design system"
 								className="object-contain"
 								fill
+								priority
 							></Image>
 						</div>
 						<div className="flex h-8 justify-between items-end">
@@ -92,6 +93,7 @@ export default function Home() {
 								alt="Image of Squarespace's text field component overlaid on a background that resembles a blueprint with grids"
 								className="object-contain"
 								fill
+								priority
 							></Image>
 						</div>
 						<div className="flex h-8 justify-between items-end">
@@ -108,6 +110,7 @@ export default function Home() {
 								alt="Hero image of the heartbeat.chat app search UI, with several elements enlarged for effect"
 								className="object-contain"
 								fill
+								priority
 							></Image>
 						</div>
 						<div className="flex h-8 justify-between items-end">
@@ -127,6 +130,7 @@ export default function Home() {
 								alt="Two product shots of the heartbeat.chat app user interface"
 								className="object-contain"
 								fill
+								priority
 							></Image>
 						</div>
 						<div className="flex h-8 justify-between items-end">
