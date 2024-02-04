@@ -228,8 +228,8 @@ export default function Home() {
 					through countless real recordings of users trying to onboard but
 					getting disrupted by modal after modal. Even worse, many of these
 					modals contained valuable content that only appeared there. That meant
-					when curious or frustrated users tried to onboard, they often missed
-					out on critical information.
+					when annoyed users onboarded and immediately clicked through modals,
+					they were locked out of information forever.
 				</p>
 				<div className="flex flex-col gap-3 mb-6 mt-6">
 					<Image
@@ -278,8 +278,8 @@ export default function Home() {
 				></Image>
 				<p>
 					At the same time, we had our UXR and Product Analytics teammates
-					verify whether there was substantive proof that these surfaces made a
-					meaningful difference to key metrics.
+					verify whether there was substantive proof that these surfaces made
+					any to key metrics.
 				</p>
 				<p>
 					Together we pulled all of our work together to determine the final
@@ -419,9 +419,9 @@ export default function Home() {
 				<h3 id="text-field-impact">Impact</h3>
 				<p>
 					This was a signifcant win for accessbility for our product. An a11y
-					team member estimated that if a new product team were to simply use
-					Text Field &quot;out of the box&quot; vs. our existing component,
-					there would be a 11% reduction in total a11y issues.
+					team member estimated that if a product team were to simply use Text
+					Field &quot;out of the box&quot; vs. our existing component, there
+					would be a 11% reduction in total a11y issues across the entire flow.
 				</p>
 				<Image
 					src={rosetta12}
