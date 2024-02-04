@@ -64,7 +64,7 @@ export default function Home() {
 					</ul>
 				</div>
 			</div>
-			<div className="grid grid-cols-1 lg:grid-cols-2 p-2 pt-4 md:pr-6 md:pb-12 gap-6 w-full h-fit max-h-screen md:overflow-scroll text-neutral-500 text-sm">
+			<div className="grid grid-cols-1 lg:grid-cols-2 p-2 pt-4 md:pr-6 md:pb-12 gap-6 w-full h-fit max-h-screen md:overflow-scroll no-scrollbar text-neutral-500 text-sm">
 				<Link href="/rosetta-tokens">
 					<div className="flex flex-col w-full h-144 hover:text-neutral-100">
 						<div className="h-136 hover:bg-neutral-900 border border-neutral-800 hover:border-neutral-600 relative">
