@@ -12,7 +12,9 @@ export default function Home() {
 	const onSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
 		setLoading(true);
-		const page = new URLSearchParams(window.location.search).get("page");
+		const requestPage = new URLSearchParams(window.location.search).get(
+			"requestPage"
+		);
 		const request = await fetch(`/api`, {
 			body: JSON.stringify({ password }),
 			headers: { "Content-Type": "application/json" },
@@ -23,7 +25,7 @@ export default function Home() {
 			setPasswordIncorrect(true);
 			setLoading(false);
 		} else {
-			router.push(page || "/");
+			router.push(requestPage || "/");
 		}
 	};
 

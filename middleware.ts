@@ -10,9 +10,9 @@ export async function middleware(request: NextRequest) {
 	// const isPathPasswordProtect = request.nextUrl.pathname.startsWith("/rosetta");
 
 	if (isPasswordEnabled && !isLoggedIn) {
-		const page = request.nextUrl.pathname;
+		const requestPage = request.nextUrl.pathname;
 		const redirectUrl = new URL("/password", request.url);
-		redirectUrl.searchParams.set("page", page);
+		redirectUrl.searchParams.set("requestPage", requestPage);
 
 		return NextResponse.redirect(redirectUrl);
 
