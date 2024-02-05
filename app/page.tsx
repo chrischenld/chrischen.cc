@@ -28,7 +28,7 @@ export default function Home() {
 						more about me: i&apos;ve been really into learning frontend.
 						i&apos;m also into food (both cooking it & eating it) and learning
 						about the cultures and intracices of regional cuisines. other
-						interests include powerlifitng (lift heavy thing), games (especially
+						interests include powerlifting (lift heavy thing), games (especially
 						the design of immersive worlds and environments), and keyboards
 						(sorry).
 					</p>

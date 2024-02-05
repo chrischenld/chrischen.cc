@@ -56,7 +56,7 @@ export default function Home() {
 
 	return (
 		<main className="flex flex-col md:p-0 gap-4 min-h-screen items-center">
-			<p className="p-2 md:p-0 md:fixed md:left-6 md:top-0.75 text-neutral-600 hover:text-neutral-400 name">
+			<p className="w-full p-2 md:p-0 md:fixed md:left-6 md:top-0.75 text-neutral-600 hover:text-neutral-400 name">
 				<Link href="/">chris chen</Link>
 			</p>
 			<div className="md:fixed hidden lg:block min-w-16 inset-y-32 lg:right-12 text-xs text-neutral-600">
@@ -167,7 +167,7 @@ export default function Home() {
 					</li>
 				</ul>
 			</div>
-			<div className="flex flex-col p-2 md:p-0 gap-6 pt-4 md:pt-32 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
+			<div className="flex flex-col px-2 md:px-0 gap-6 pt-4 md:pt-32 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
 				<Image
 					src={home02}
 					alt="Image of Squarespace's text field component overlaid on a background that resembles a blueprint with grids"

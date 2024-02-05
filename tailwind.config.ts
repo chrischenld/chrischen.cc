@@ -43,7 +43,7 @@ const config: Config = {
 			sm: "300px",
 			// => @media (min-width: 640px) { ... }
 
-			md: "600px",
+			md: "496px",
 			// => @media (min-width: 768px) { ... }
 
 			lg: "1124px",

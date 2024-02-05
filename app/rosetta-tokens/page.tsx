@@ -55,7 +55,7 @@ export default function Home() {
 
 	return (
 		<main className="flex flex-col md:p-0 gap-4 min-h-screen items-center">
-			<p className="p-2 md:p-0 md:fixed md:left-6 md:top-0.75 text-neutral-600 hover:text-neutral-400 name">
+			<p className="w-full p-2 md:p-0 md:absolute lg:fixed md:left-6 md:top-0.75 text-neutral-600 hover:text-neutral-400 name">
 				<Link href="/">chris chen</Link>
 			</p>
 			<div className="md:fixed hidden lg:block min-w-16 inset-y-32 lg:right-12 text-xs text-neutral-600">
@@ -130,7 +130,7 @@ export default function Home() {
 					</li>
 				</ul>
 			</div>
-			<div className="flex flex-col gap-6 pt-4 md:pt-32 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
+			<div className="flex flex-col gap-6 px-2 md:px-0 pt-4 md:pt-32 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
 				<Image
 					src={home01}
 					alt="Two images showing the light and dark theme full color palettes for Squarespace's design system"
@@ -371,23 +371,21 @@ export default function Home() {
 				</p>
 				<h2 id="retrospective">Retrospective</h2>
 				<p>
-					I definitely didn&apos;t design the perfect rollout. From this
-					project, I&apos;ve learned a lot about the value of communication,
-					documentation and guidance, partnerships with our consumers, and
-					adjusting for consumer workflows as a platform team member. These are
-					now fundamental steps in my rollout process; half the challenge of any
-					impactful release.
+					This was far from the perfect rollout. I learned a lot about the value
+					of communication, documentation and guidance, partnerships with our
+					consumers, and adjusting for consumer workflows. These are critical
+					steps I take, as half the challenge of any impactful release for
+					platform teams is the release planning and communication.
 				</p>
 				<p>
 					As for this project, we&apos;ve continued to monitor responses from
-					consumers around color. We get few support questions, but provide
-					regularly guidance around the usage of color.
+					consumers around color. We get few technical questions, but still
+					receive some around the usage of color.
 				</p>
 				<p>
 					Several months after our initial release, our initial bets on building
-					for the future seem to have been for the better, as new work from
-					designers continue to utilize the framework of color we&apos;ve
-					provided.
+					for the future seem to have paid off, as new work from designers
+					further utilize the framework of color we&apos;ve provided.
 				</p>
 			</div>
 			<footer className="pb-56 w-full md:max-w-lg lg:max-w-xl xl:max-w-2xl ">

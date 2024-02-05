@@ -51,7 +51,7 @@ export default function Home() {
 
 	return (
 		<main className="flex flex-col md:p-0 gap-4 min-h-screen items-center">
-			<p className="p-2 md:p-0 md:fixed md:left-6 md:top-0.75 text-neutral-600 hover:text-neutral-400 name">
+			<p className="w-full p-2 md:p-0 md:fixed md:left-6 md:top-0.75 text-neutral-600 hover:text-neutral-400 name">
 				<Link href="/">chris chen</Link>
 			</p>
 			<div className="md:fixed hidden lg:block min-w-16 inset-y-32 lg:right-12 text-xs text-neutral-600">
@@ -168,12 +168,12 @@ export default function Home() {
 					</li>
 				</ul>
 			</div>
-			<div className="flex flex-col gap-6 pt-4 md:pt-32 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
+			<div className="flex flex-col gap-6 px-2 md:px-0 pt-4 md:pt-32 md:max-w-lg lg:max-w-xl xl:max-w-2xl items-center text-neutral-400 text-sm lowercase">
 				<Image
 					src={home04}
 					alt="Sequence of many of the UI components used within Heartbeat"
 					priority={false}
-					className="max-w-4xl my-6"
+					className="xl:max-w-4xl my-6"
 				></Image>
 				<h1 className="text-neutral-100">heartbeat</h1>
 				<h2 id="what-is-heartbeat">what is heartbeat?</h2>
