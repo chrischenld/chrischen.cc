@@ -198,14 +198,14 @@ export default function Home() {
 				<h2 id="results">results</h2>
 				<p>
 					Our component library enabled us to ship features and requests with
-					speed and accuracy. These features ranged from hosting full courses,
-					to handling payments, all the way to creating and hosting events -
+					speed and accuracy. These features ranged from hosting full courses to
+					handling payments, all the way to creating and hosting events -
 					everything budding community admins needed to get a community running,
 					engaged, and monetized.
 				</p>
 				<Image
 					src={heartbeat01}
-					alt="A grid showcasing a list of all the features we shipped at Heartbeat. The full list: re-designed desktop experience, payments, mobile app, courses, groups, events, search, community cusdtomization, video calls, weekly digests, embeds, analytics, kickstart (onboarding), custom domains, upsells, invitations, chats, polls."
+					alt="A grid showcasing a list of all the features we shipped at Heartbeat. The full list: re-designed desktop experience, payments, mobile app, courses, groups, events, search, community customization, video calls, weekly digests, embeds, analytics, kickstart (onboarding), custom domains, upsells, invitations, chats, polls."
 					priority={false}
 					className="my-6"
 				></Image>
@@ -219,10 +219,10 @@ export default function Home() {
 					system: personalization and friendliness.
 				</p>
 				<p>
-					Heartbeat aims to be a fully user customized platform, with custom
+					Heartbeat aims to be a fully user-customized platform, with custom
 					domains, branding, and colors. Primitives are often color agnostic and
-					lacks an opinionated Heartbeat branding, instead opting to emphasize
-					each community&apos;s own branding.
+					lack an opinionated Heartbeat branding, instead opting to emphasize
+					each community&apos;s branding.
 				</p>
 				<Image
 					src={heartbeat02}
@@ -231,7 +231,7 @@ export default function Home() {
 					className="my-6"
 				></Image>
 				<p>
-					Both community admins and their members prefer friendliness and easy
+					Both community admins and their members prefer friendliness and ease
 					of use over information density - as a result, our components are
 					generally larger and rounder.
 				</p>
@@ -240,12 +240,12 @@ export default function Home() {
 					A problem we faced early on was users getting confused with all the
 					different tools and their own slightly different design patterns. Each
 					section of our all-in-one product had different interaction and
-					navigation patterns. This problem was only exacerbated with more
+					navigation patterns. This problem was only exacerbated by more
 					disparate patterns on mobile.
 				</p>
 				<Image
 					src={heartbeat03}
-					alt="A sequence of the different navigation sidebars across product areas and devices sizes"
+					alt="A sequence of the different navigation sidebars across product areas and device sizes"
 					priority={false}
 					className="my-6"
 				></Image>
@@ -317,24 +317,24 @@ export default function Home() {
 				</p>
 				<Image
 					src={heartbeat05}
-					alt="Screen capture shows a pointer icon selects interacts and selects filters without any search terms being entered in through the keyboard, demonstrating use of the search feature with only a mouse"
+					alt="Screen capture shows a pointer icon selects interacts and selects filters without any search terms being entered in through the keyboard, demonstrating the use of the search feature with only a mouse"
 					priority={false}
 					className="my-6"
 				></Image>
 				<p>
 					while we generally want to avoid excessive variants on any component,
 					it&apos;s better to do it on increasingly lower levels. this is
-					because efficiently built higher level components (collections of
+					because efficiently built higher-level components (collections of
 					primitive components) use correct variant instances of primitives,
 					capturing the majority of possible component states in a batched
 					format.
 				</p>
 				<p>
 					as primitives sit at the lowest levels, variant/property messes are
-					mostly obscured in actual use of the component. see our dropdown
+					mostly obscured in the actual use of the component. see our dropdown
 					component: all of our variant complexity is baked within the dropdown
 					item level, not the dropdown itself. this also makes prototype
-					interacts much simpler to implement.
+					interactions much simpler to implement.
 				</p>
 				<h2 id="top-level-components">Top level components</h2>
 				<p>
@@ -362,7 +362,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={heartbeat07}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					alt="A component that is overly complicated with intermediary components between the top level component and the atomic units below them"
 					priority={false}
 					className="my-6"
 				></Image>
@@ -370,12 +370,12 @@ export default function Home() {
 					however, when we nest even further subcomponents into those, we may be
 					causing ourselves more harm. see above for an example. the resulting
 					nesting structure looks like lesson → assignment → submission, which
-					leads to over complication.
+					leads to over-complication.
 				</p>
 				<p>
-					it becomes really confusing to figure out where the variant or state
-					controls for a subcomponent are stored if there are multiple levels of
-					control to a single one. this also makes updating subcomponents more
+					it becomes confusing to figure out where the variant or state controls
+					for a subcomponent are stored if there are multiple levels of control
+					to a single one. this also makes updating subcomponents more
 					complicated in the case of specific state changes.
 				</p>
 				<h2 id="takeaway">takeaway</h2>

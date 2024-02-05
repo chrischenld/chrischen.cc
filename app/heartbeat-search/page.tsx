@@ -149,9 +149,9 @@ export default function Home() {
 				<h2 id="three-considerations">three considerations</h2>
 				<p>
 					First, we knew it had to appeal to both power and first-time users.
-					This meant accommodating for cognitive differences in users (memory of
+					This meant accommodating cognitive differences in users (memory of
 					shortcuts, familiarity, and user mental models) and preferred
-					interaction method (heavier use of keyboard inputs by power users vs
+					interaction methods (heavier use of keyboard inputs by power users vs
 					use of clickable UI elements).
 				</p>
 				<p>
@@ -185,12 +185,12 @@ export default function Home() {
 					But having two separate menus became complicated for users who had to
 					learn the limits of each menu. For non-shortcut key users, we risked
 					even more confusion by potentially having two apparent “search” bars
-					present on screen at the same time. Because of these drawbacks, we
+					present on the screen at the same time. Because of these drawbacks, we
 					opted for a single universal search.
 				</p>
 				<Image
 					src={search02}
-					alt="The Heartbeat UI showing a condensed text input with suggestion prompts that read 'I'm looking for...' and options like 'Messages,' 'People,' and 'Channels'"
+					alt="The Heartbeat UI shows a condensed text input with suggestion prompts that read 'I'm looking for...' and options like 'Messages,' 'People,' and 'Channels'"
 					priority={false}
 					className="my-6"
 				></Image>
@@ -198,16 +198,15 @@ export default function Home() {
 				<p>
 					To address the additional noise, we spent time refining search
 					filters. While many apps list search filters in a separate advanced
-					search mode, we wanted go a step further for our users.
+					search mode, we wanted to go a step further for our users.
 				</p>
 				<p>
-					Our search provides guidance throughout the query crafting process.
-					Entering each search filter reveals contextually relevant search
-					filters.
+					Our search provides guides during the query crafting process. Entering
+					each search filter reveals contextually relevant search filters.
 				</p>
 				<Image
 					src={search03}
-					alt="Search function shown in use; the initial search asks user what they're searching for, and as the user enters options like 'Messages' it asks for further filters like 'in: channel.' As the user selects this, it populates a list of channels to search within."
+					alt="Search function is shown in use; the initial search asks the user what they're searching for, and as the user enters options like 'Messages' it asks for further filters like 'in: channel.' As the user selects this, it populates a list of channels to search within."
 					priority={false}
 					className="my-6"
 				></Image>
@@ -216,9 +215,9 @@ export default function Home() {
 					completely on-rails experience. Users were never forced to complete
 					search filters. They could ignore suggestions at any stage in the
 					process or abandon incomplete queries and still complete queries. None
-					of our search filters were dependent on another, and could be entered
+					of our search filters were dependent on another and could be entered
 					in any order within the query. Users could also add multiple search
-					filters of the same type - resulting in OR logic.
+					filters of the same type - resulting in &quot;OR&quot; logic.
 				</p>
 				<p>
 					Search filters could be added even after an initial query was made -
@@ -245,7 +244,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={search05}
-					alt="Screen capture shows a pointer icon selects interacts and selects filters without any search terms being entered in through the keyboard, demonstrating use of the search feature with only a mouse"
+					alt="Screen capture shows a pointer icon selects interacts and selects filters without any search terms being entered in through the keyboard, demonstrating the use of the search feature with only a mouse"
 					priority={false}
 					className="my-6"
 				></Image>
@@ -257,7 +256,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={search06}
-					alt="Screen capture shows a user using search using keystrokes, with their keystrokes appearing with each key press"
+					alt="Screen capture shows a user using search using keystrokes, with their keystrokes appearing with each keypress"
 					priority={false}
 					className="my-6"
 				></Image>
@@ -271,15 +270,15 @@ export default function Home() {
 				</p>
 				<p>
 					Working with Mayhul, Heartbeat co-founder and engineer, made it easy.
-					While designers enjoy the challenge of soloing problems like these,
-					there&apos;s often missing technical context that complicates
+					While designers enjoy the challenge of &quot;solo-ing&quot; problems
+					like these, there are often missing technical context that complicates
 					design-eng collaboration. Playing with the API early on and regularly
 					chatting between iterations with Mayhul surfaced a majority of the
 					design considerations we ultimately ran with.
 				</p>
 				<Image
 					src={search07}
-					alt="A screenshot from FigJam that shows the result priority of different types of entities; each entity is represented by a post-it, post-its are arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
+					alt="A screenshot from FigJam shows the result priority of different types of entities; each entity is represented by a post-it. Each post-it is arranged in a horizontal line. An arrow above the line of post-its is labeled 'result priority'"
 					priority={false}
 					className="my-6"
 				></Image>
@@ -299,7 +298,7 @@ export default function Home() {
 				</p>
 				<p>
 					The result was a search weighting system that returned more relevant,
-					higher value results. Further improvements here are still to come -
+					higher-value results. Further improvements here are still to come -
 					weighting based on relevancy to specific members and the popularity of
 					content within a community.
 				</p>
@@ -307,9 +306,9 @@ export default function Home() {
 				<p>
 					Buildup of content is a problem that we recognize is bigger than just
 					search. We&apos;re interested in continuing to ship features that help
-					discoverability of high value content within communities. But as for
-					now, we&apos;re really excited to see users finally search for content
-					within their community - even as communities continue to grow.
+					discoverability of high-value content within communities. But as for
+					now, we&apos;re excited to see users finally search for content within
+					their community - even as communities continue to grow.
 				</p>
 			</div>
 			<footer className="pb-56 w-full md:max-w-lg lg:max-w-xl xl:max-w-2xl">

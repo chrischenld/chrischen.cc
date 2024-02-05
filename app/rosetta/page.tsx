@@ -188,7 +188,7 @@ export default function Home() {
 				<div className="flex flex-col gap-3 mb-6 mt-6">
 					<Image
 						src={rosetta01}
-						alt="A screenshot of our design system docsite'"
+						alt="A screenshot of our design system doc site"
 						priority={false}
 						className="xl:max-w-2xl mb-0"
 					></Image>
@@ -211,8 +211,7 @@ export default function Home() {
 					</li>
 				</ul>
 				<p className="w-full">
-					Here&apos;s two bite-sized examples that best highlight these
-					challenges:
+					Here are two bite-sized examples that best highlight these challenges:
 				</p>
 				<hr></hr>
 				<h2 id="pop-ups">pop ups</h2>
@@ -251,9 +250,9 @@ export default function Home() {
 				<h3 id="pop-ups-analysis">Analysis</h3>
 				<p>
 					First, we needed to account for everything we had. I audited the
-					product for every modal we could find. With all them collected, my
-					teammate Laurah and I classified them based on a factors like type,
-					purpose, content.
+					product for every modal we could find. With all of them collected, my
+					teammate Laurah and I classified them based on factors like type,
+					purpose, and content.
 				</p>
 				<Image
 					src={rosetta03}
@@ -272,7 +271,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={rosetta04}
-					alt="A diagram with a horizontal line with two arrows on each end of the line: the left side of the line is labeled 'less disruptive' and the right side with 'more disruptive.' A list of different UI elements from our design system are listed. Modals are all the way on the right."
+					alt="A diagram with a horizontal line with two arrows on each end of the line: the left side of the line is labeled 'less disruptive' and the right side is labeled as 'more disruptive.' A list of different UI elements from our design system are listed. Modals are on the right."
 					priority={false}
 					className="xl:max-w-2xl mb-0"
 				></Image>
@@ -282,9 +281,9 @@ export default function Home() {
 					any to key metrics.
 				</p>
 				<p>
-					Together we pulled all of our work together to determine the final
-					mapping of modals throughout the product. Based on this map, we formed
-					a final set of Keep, Edit, Cut recommendations.
+					We pulled all of our work together to determine the final mapping of
+					modals throughout the product. Based on this map, we formed a final
+					set of Keep, Edit, and Cut recommendations.
 				</p>
 				<h3 id="pop-ups-rollout">Rollout and implementation</h3>
 				<p>
@@ -294,18 +293,18 @@ export default function Home() {
 				</p>
 				<Image
 					src={rosetta05}
-					alt="Screenshot of a Reveal component, a UI componen that expands or collapses content. Next to it, description on what it can be used for."
+					alt="Screenshot of a Reveal component, a UI component that expands or collapses content. Next to it, there's a description on what it can be used for."
 					priority={false}
 					className="xl:max-w-2xl mb-0"
 				></Image>
 				<p>
 					As one of Rosetta&apos;s maintainers, I knew this was a failure of
 					design guidance on our part. And while the steps above addressed the
-					current issues, we had to make sure this wouldn&apos;t keep occuring.
+					current issues, we had to make sure this wouldn&apos;t keep occurring.
 				</p>
 				<Image
 					src={rosetta06}
-					alt="Image labeled 'Should I use a pop' followed a quadrant to the right that acts a 2x2 decision making matrix. Columns, left to right: 'Setup' and 'Data Collection'; Rows, top to bottom: 'Education' and 'Task.' Quadrants labeled clockwise, starting from top left: No, Yes, Maybe, Maybe"
+					alt="Image labeled 'Should I use a pop' followed a quadrant to the right that acts as a 2x2 decision making matrix. Columns, left to right: 'Setup' and 'Data Collection'; Rows, top to bottom: 'Education' and 'Task.' Quadrants labeled clockwise, starting from top left: No, Yes, Maybe, Maybe"
 					priority={false}
 					className="xl:max-w-2xl mb-0"
 				></Image>
@@ -319,13 +318,13 @@ export default function Home() {
 				</p>
 				<Image
 					src={rosetta07}
-					alt="The same disruptive scale as depicted above, this time titled with 'Setup' above it. Some are UI options are highlighted, indicating they should be use for this type of task"
+					alt="The same disruptive scale as depicted above, this time titled with 'Setup' above it. Some UI options are highlighted, indicating they should be used for this type of task"
 					priority={false}
 					className="xl:max-w-2xl mb-0"
 				></Image>
 				<h3 id="pop-ups-impact">Impact</h3>
 				<p>
-					We had tackled a known area of concern flagged by user research, but
+					We had tackled a known area of concern flagged by user research but
 					had seemed daunting in its scale and ambiguity.
 				</p>
 				<p>
@@ -348,7 +347,7 @@ export default function Home() {
 				<div className="flex flex-col gap-3 mb-6 mt-6">
 					<Image
 						src={rosetta08}
-						alt="Screen recording with the screen reader turned on, showing an unoptimal experience"
+						alt="Screen recording with the screen reader turned on, showing an suboptimal experience"
 						priority={false}
 						className="xl:max-w-2xl mb-0"
 					></Image>
@@ -358,10 +357,10 @@ export default function Home() {
 					</p>
 				</div>
 				<p>
-					We definitely felt the design/engineering debt here, as we
-					couldn&apos;t actually update the component in place - it was such a
-					fundamental change that it would break too many of our consumers&apos;
-					implementation of the component.
+					We felt the design/engineering debt here, as we couldn&apos;t update
+					the component in place - it was such a fundamental change that it
+					would break too many of our consumers&apos; implementation of the
+					component.
 				</p>
 				<p>
 					I worked with teammates and engineers Karl Rodulfo and Siddhanth Patel
@@ -369,17 +368,16 @@ export default function Home() {
 				</p>
 				<h3 id="text-field-design">Design and rollout</h3>
 				<p>
-					From the very start, we weren&apos;t trying to re-invent the wheel. In
-					fact, we wanted it to look almost entirely the same as the existing
-					component, with several differences to meet the highest levels of
-					accessibility:
+					From the very start, we weren&apos;t trying to reinvent the wheel. We
+					wanted it to look almost entirely the same as the existing component,
+					with several differences to meet the highest levels of accessibility:
 				</p>
 				<ul className="flex flex-col list-disc gap-2">
 					<li>2px focus state borders</li>
 					<li>Support full keyboard navigation</li>
 					<li>Better communicate errors</li>
 					<li>No placeholder text by default</li>
-					<li>Required label (no placeholder as label)</li>
+					<li>Required label (no placeholder as a label)</li>
 					<li>Compliant contrast on any product surface</li>
 				</ul>
 				<Image
@@ -389,11 +387,11 @@ export default function Home() {
 					className="xl:max-w-2xl mb-0"
 				></Image>
 				<p>
-					At the same time, we took small but measured design choices towards
+					At the same time, we took small but measured design choices toward
 					better patterns, like setting the new default to the encapsulated form
-					of the component, or moving the error below the field. These small
-					shifts helped &quot;automatically opt in&quot; userts to the best
-					guidance to the API.
+					of the component or moving the error below the field. These small
+					shifts helped &quot;automatically opt-in&quot; users to best patterns
+					within the API.
 				</p>
 				<Image
 					src={rosetta11}
@@ -404,7 +402,7 @@ export default function Home() {
 				<p>
 					Along with the updated component, we also prepared updated docs and
 					Figma related resources. This was critical for understanding the API
-					and best guidance around use of the field.
+					and best guidance around the use of the field.
 				</p>
 				<Image
 					src={rosetta10}
@@ -414,14 +412,14 @@ export default function Home() {
 				></Image>
 				<p>
 					We rolled out to consumers and product partners, including an
-					interntionalization team working to bring localized address forms.
+					internationalization team working to bring localized address forms.
 				</p>
 				<h3 id="text-field-impact">Impact</h3>
 				<p>
-					This was a signifcant win for accessbility for our product. An a11y
+					This was a significant win for accessibility for our product. An a11y
 					team member estimated that if a product team were to simply use Text
 					Field &quot;out of the box&quot; vs. our existing component, there
-					would be a 11% reduction in total a11y issues across the entire flow.
+					would be an 11% reduction in total a11y issues across the entire flow.
 				</p>
 				<Image
 					src={rosetta12}

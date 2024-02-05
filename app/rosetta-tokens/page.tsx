@@ -141,7 +141,7 @@ export default function Home() {
 				<p>
 					Squarespace has grown from being just a website builder into a
 					platform to sell anything. But the existing colors from our design
-					system, Rosetta, weren&apos;t supporting new patterns and features.
+					system, Rosetta, didn&apos;t support new patterns and features.
 				</p>
 				<p>
 					I led the design of the new and current color token system for
@@ -149,15 +149,15 @@ export default function Home() {
 				</p>
 				<p>
 					My engineering partner Faustine Pollet worked on implementation.
-					Teammates on Design Platform provided critical feedback to shipping
-					this project, including my design manager John Meguerian and staff
-					designer John Voss.
+					Teammates on Design Platform provided critical feedback to ship this
+					project, including my design manager John Meguerian and staff designer
+					John Voss.
 				</p>
 				<h2 id="background">Background</h2>
 				<p>
 					Historically, when SQSP just built websites, the design language
 					leaned on a monochromatic palette and dull colors. This shifted focus
-					away from the the app chrome and onto user websites and content.
+					away from the app chrome and onto user websites and content.
 				</p>
 				<div className="flex flex-col gap-3 mb-6 mt-6">
 					<Image
@@ -176,17 +176,17 @@ export default function Home() {
 					However, new features and patterns in the product like Fluid Engine
 					(drag and drop editor) and data-heavy interfaces like payments,
 					campaigns, and invoicing required &quot;bright&quot; colors that stand
-					out from user generated content.
+					out from user-generated content.
 				</p>
 				<p>
 					Product partners requested &quot;bright&quot; colors but these updates
-					risked disrupting the existing color system. This resulted in one-offs
+					risked disrupting the existing color system. This resulted in one-off
 					color assignments, which degraded the utility of Rosetta.
 				</p>
 				<div className="flex flex-col gap-3 mb-6 mt-6">
 					<Image
 						src={tokens02}
-						alt="A side-by-side of two color palettes, red, green, blue, orange, and pink color ramps. The right one has only adjusted the blue ramp, and it doesn't visually match with the rest of the palette"
+						alt="A side-by-side of two color palettes, red, green, blue, orange, and pink color ramps. The right one has only adjusted the blue ramp, and it doesn't visually match the rest of the palette"
 						priority={false}
 						className="xl:max-w-2xl"
 					></Image>
@@ -223,7 +223,7 @@ export default function Home() {
 				</p>
 				<Image
 					src={tokens03}
-					alt="Not perceptually uniform: RGB, HSL. Percentually uniform: LCH"
+					alt="Not perceptually uniform: RGB, HSL. Perceptually uniform: LCH"
 					priority={false}
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
@@ -231,8 +231,8 @@ export default function Home() {
 					Finally, we examined our designers and engineers&apos; workflows and
 					how they used colors. We did a lit review of old dusty files from past
 					design system teammates. We knew we had to meet designers where they
-					were in order to reduce confusion with the new color rollouts as we
-					were directly affecting their workflows.
+					were to reduce confusion with the new color rollouts as we were
+					directly affecting their workflows.
 				</p>
 				<h2 id="creating-the-colors">Creating the colors</h2>
 				<p>
@@ -247,26 +247,26 @@ export default function Home() {
 				</p>
 				<Image
 					src={tokens04}
-					alt="Animated GIF showing the gray ramp being 'filled in' by a couple values at a time"
+					alt="Animated GIF showing the gray ramp being 'filled in' by a couple of values at a time"
 					priority={false}
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
 				<p>
 					Steps on the ramp were based on both contrast against our lightest
 					background, but also relative contrast against other steps on the
-					ramp. This coincided with the designation of certain stops designated
-					for certain types of UI elements.
+					ramp. This coincided with the designation of certain stops for select
+					types of UI elements.
 				</p>
 				<p>
 					Color ramps were handled slightly differently. With fewer constraints,
 					we could increase the apparent &quot;brightness&quot; of our colors to
 					meet designer needs. Again, we start with critical UI roles (text,
-					backgrounds, borders) and use the same stops to fill UI element and
-					color contrast needs.
+					backgrounds, borders) and use the same stops to fit color contrast
+					needs.
 				</p>
 				<Image
 					src={tokens05}
-					alt="A very small, zoomed out spec of all of the colors and color roles"
+					alt="A very small, zoomed-out spec of all of the colors and color roles"
 					priority={false}
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
@@ -278,9 +278,9 @@ export default function Home() {
 				</p>
 				<p>
 					Even in the old color system, we supported a dark theme, though it has
-					few uses in product. We lowered the Lightness of colors, as they led
-					to halation and visual fatigue. But we still maintained our highest
-					levels of accessibility.
+					few uses in the product. We lowered the Lightness of colors, as they
+					led to halation and visual fatigue. But we still maintained our
+					highest levels of accessibility.
 				</p>
 				<Image
 					src={tokens11}
@@ -291,8 +291,8 @@ export default function Home() {
 				<p>
 					Next was rigorously testing these colors against existing and future
 					designs to ensure colors met every need. Prototyping helped me
-					maintain sanity and move forward, as colors which didn&apos;t have as
-					much of a definitive &quot;correct&quot; design solution.
+					maintain sanity and move forward, as colors didn&apos;t have as much
+					of a definitive &quot;correct&quot; design solution.
 				</p>
 				<Image
 					src={tokens07}
@@ -303,9 +303,9 @@ export default function Home() {
 				<p>
 					We explored different naming schemas to find one that best sorted and
 					implied their intended use. We knew these tokens would be critical if
-					we wanted to prioritize maintaibility, future-proofing, and quick
+					we wanted to prioritize maintainability, future-proofing, and quick
 					adoption. This included prototyping Figma styles to best fit within
-					designer workflow. (Unfortunately we released our new colors about a
+					designer workflows. (Unfortunately, we released our new colors about a
 					month before the variable feature release in Figma, which we later got
 					back and adopted.)
 				</p>
@@ -365,8 +365,8 @@ export default function Home() {
 					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
 				<p>
-					We received positive feedback from designers and enigneers alike,
-					supporting more expressive and features and design patterns as SQSP
+					We received positive feedback from designers and engineers alike,
+					supporting more expressive features and design patterns as SQSP
 					continues to grow in depth and complexity of its offerings.
 				</p>
 				<h2 id="retrospective">Retrospective</h2>
@@ -379,13 +379,13 @@ export default function Home() {
 				</p>
 				<p>
 					As for this project, we&apos;ve continued to monitor responses from
-					consumers around color. We get few technical questions, but still
+					consumers around color. We get a few technical questions, but still
 					receive some around the usage of color.
 				</p>
 				<p>
 					Several months after our initial release, our initial bets on building
 					for the future seem to have paid off, as new work from designers
-					further utilize the framework of color we&apos;ve provided.
+					further utilizes the framework of color we&apos;ve provided.
 				</p>
 			</div>
 			<footer className="pb-56 w-full md:max-w-lg lg:max-w-xl xl:max-w-2xl ">
