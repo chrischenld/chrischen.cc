@@ -50,14 +50,13 @@ export default function Home() {
 				</p>
 				<p>
 					growing up, software was most of my experience around design - if not
-					a good part of my experience of the world. the keyboard and mouse
-					always felt more like an extension of me than anything else. i
-					didn&apos;t know what good design looked like in cars, or shoes, or
-					fashion - but i did know what it looked like in software. my journey
-					into software design wasn&apos;t like that of some other designers who
-					were initially interested in art or graphic design - i was always just
-					interested in the design of something that was so core to my
-					experience of the world.
+					a most of my experience of the world. the keyboard and mouse always
+					felt more like an extension of me than anything else. i didn&apos;t
+					know what good design looked like in cars, shoes, anything really -
+					but i did know what it looked like in software. consquently, my
+					journey into software design wasn&apos;t rooted in art or graphic
+					design - that came after. i was always just interested in the design
+					of something that was so core to my experience of the world.
 				</p>
 				<div className="flex flex-col gap-3 mb-6 mt-6">
 					<Image
@@ -72,24 +71,23 @@ export default function Home() {
 					</p>
 				</div>
 				<p>
-					i think with this framing of my own experience, i always had a soft
-					spot for the craft of things. and not just what designers mean by
-					craft in response to whatever new hot app launched today! but craft
-					like, a hand spun mug. and the difference between spinning your own
-					imperfect mug and handing it to someone, rather than handing them a
-					&quot;more flawless,&quot; mass produced mug. there is something nice
-					to doing the challenging bits from start to finish, but also doing it
-					your way, with that full control.
+					because it wa so special to me, i always had a soft spot for the craft
+					of software and everything online. and not just what designers mean by
+					craft regarding whatever hot new app launched. but craft like, a hand
+					spun mug. and the difference between spinning your own imperfect mug
+					and handing it to someone, rather than handing them a &quot;more
+					flawless,&quot; mass produced mug. there is something nice to doing
+					the challenging bits from start to finish, but also doing it your way,
+					with full control.
 				</p>
 				<p>
 					i&apos;ve always been interested in the design of tools but also the
 					tradeoffs we concede to create more usable tools. intended or not, the
 					tradeoffs directly affect the user&apos;s creative process and output.
-					i thought about this recently with framer&apos;s recent update to
-					include CMS pages into the page panel, and how the previous model had
-					shaped my own mental model around how blogs &quot;should be.&quot; or
-					the idea of a website looking &quot;squarespace-y&quot; and what that
-					implies.
+					i thought about this with the idea of a website looking
+					&quot;squarespace-y&quot; and what that implies. or recently, with
+					framer&apos;s recent update to CMS, and how the previous model had
+					shaped my own mental model around how blogs &quot;should be.&quot;
 				</p>
 				<Image
 					src={this03}
