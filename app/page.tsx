@@ -25,12 +25,18 @@ export default function Home() {
 						and creators.
 					</p>
 					<p>
-						more about me: i&apos;ve been really into learning frontend.
-						i&apos;m also into food (both cooking it & eating it) and learning
-						about the cultures and intracices of regional cuisines. other
-						interests include powerlifting (lift heavy thing), games (especially
-						the design of immersive worlds and environments), and keyboards
-						(sorry).
+						more about me: i&apos;ve been really into&nbsp;
+						<Link
+							href="/building-this"
+							className="text-neutral-100 hover:underline"
+						>
+							learning frontend
+						</Link>
+						{""}. i&apos;m also into food (both cooking it & eating it) and
+						learning about the cultures and intracices of regional cuisines.
+						other interests include powerlifting (lift heavy thing), games
+						(especially the design of immersive worlds and environments), and
+						keyboards (sorry).
 					</p>
 					<ul className="text-neutral-100">
 						<li>
