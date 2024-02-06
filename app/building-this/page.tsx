@@ -42,16 +42,17 @@ export default function Home() {
 					technical barriers between design intent and execution.
 				</p>
 				<p>
-					tools like framer and webflow are just so good, but even besides just
-					their limitations, i&apos;ve always appreciated when designers
-					approach the design of software, with as much personal control, with
-					intentionality and, for lack of a better word, with sincerity.
+					tools like framer and webflow are just so good, but fall distinctly
+					within the domain of design tooling. even beyond this, i&apos;ve
+					always appreciated when designers approach the design of software,
+					with personal control, intentionality and, for lack of a better word,
+					sincerity.
 				</p>
 				<p>
-					growing up software was most of my experience around design - if not a
-					good part of my experience of the world. the keyboard and mouse always
-					felt more like an extension of me than any other tool ever did. i
-					didn&apos;t know what good design looked like in cars, or shoes, or
+					growing up, software was most of my experience around design - if not
+					a good part of my experience of the world. the keyboard and mouse
+					always felt more like an extension of me than any other tool ever did.
+					i didn&apos;t know what good design looked like in cars, or shoes, or
 					fashion - but i did know what it looked like in software. my journey
 					into software design wasn&apos;t like some designers who were
 					initially interested in art or graphic design - i was always just
