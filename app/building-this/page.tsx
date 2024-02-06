@@ -51,11 +51,11 @@ export default function Home() {
 				<p>
 					growing up, software was most of my experience around design - if not
 					a good part of my experience of the world. the keyboard and mouse
-					always felt more like an extension of me than any other tool ever did.
-					i didn&apos;t know what good design looked like in cars, or shoes, or
+					always felt more like an extension of me than anything else. i
+					didn&apos;t know what good design looked like in cars, or shoes, or
 					fashion - but i did know what it looked like in software. my journey
-					into software design wasn&apos;t like some designers who were
-					initially interested in art or graphic design - i was always just
+					into software design wasn&apos;t like that of some other designers who
+					were initially interested in art or graphic design - i was always just
 					interested in the design of something that was so core to my
 					experience of the world.
 				</p>
@@ -74,12 +74,12 @@ export default function Home() {
 				<p>
 					i think with this framing of my own experience, i always had a soft
 					spot for the craft of things. and not just what designers mean by
-					craft re: whatever new hot app launched today! but craft like, a hand
-					spun this mug. and the difference between spinning your own imperfect
-					mug and handing it to someone, rather than handing them a &quot;more
-					flawless,&quot; mass produced mug. there is something nice to doing
-					the challenging bits from start to finish, but also doing it your way.
-					there&apos;s something nice about having that full control.
+					craft in response to whatever new hot app launched today! but craft
+					like, a hand spun mug. and the difference between spinning your own
+					imperfect mug and handing it to someone, rather than handing them a
+					&quot;more flawless,&quot; mass produced mug. there is something nice
+					to doing the challenging bits from start to finish, but also doing it
+					your way, with that full control.
 				</p>
 				<p>
 					i&apos;ve always been interested in the design of tools but also the
@@ -95,7 +95,7 @@ export default function Home() {
 					src={this03}
 					alt="The announcement of Framer's unified pages update"
 					priority={false}
-					className="xl:max-w-2xl mb-0"
+					className="xl:max-w-2xl mb-6 mt-6"
 				></Image>
 				<p>
 					obviously these opinionated tools solve problems, at scale and with a
@@ -115,13 +115,13 @@ export default function Home() {
 					src={this05}
 					alt="Asking ChatGPT for a solution. Everything is blurred except two conversation titles on the sidebar. They're basically the same prompt."
 					priority={false}
-					className="xl:max-w-2xl mb-0"
+					className="xl:max-w-2xl mt-6"
 				></Image>
 				<Image
 					src={this06}
 					alt="Asking ChatGPT for a solution. Everything is blurred except two conversation titles on the sidebar. They're basically the same prompt."
 					priority={false}
-					className="xl:max-w-2xl mb-0"
+					className="xl:max-w-2xl mb-6"
 				></Image>
 				<p>
 					a huge tool i used was chatgpt - and not just for the command c /
@@ -159,26 +159,25 @@ export default function Home() {
 				</div>
 				<p>
 					there were some very impressive things that chatgpt did help me with,
-					specifically for implementing this site. password protecting project
-					pages was honestly a huge headache for me, in part because most people
-					building an auth system in nextjs want something much more robust than
-					what i wanted. there was one piece of this where i found one solution
-					that look promising but used methods from the old pages router, and
-					examples from the nextjs site that used the right methods, but not
-					quite my use case. i told chatgpt to basically do a kind of weird,
+					specifically for implementing this site. password protecting pages was
+					a headache, mostly because people building auth on nextjs project
+					generally want something more robust. but there was one part of this,
+					where i need a solution for redirections. i found one solution that
+					look promising but used methods from the old pages router, and
+					documentation from the nextjs site that used the right methods, but
+					not quite my use case. i told chatgpt to basically do a kind of weird,
 					code-based style transfer to use the syntax and methods from one
 					solution but apply it in a way that matched the other one. and it did
-					great. and i still learned a ton about routing, web response api, and
+					great. and i learned a ton about routing, web response api, and
 					middleware.
 				</p>
 				<p>
 					so what&apos;s next here? i like writing and i&apos;ve already built a
-					bunch of protoypes of blogs, so i guess a natural step is an actual
-					store for writing. beyond that, i have this dream of a portfolio site
-					where there are no case studies, just full daily notes, screenshots,
-					and other things i took note of each day until a project was done. i
-					know it&apos;d be a nightmare to parse, but something about that just
-					feels more real and sincere.
+					bunch of protoypes of blogs. beyond that, i have this pipe dream of a
+					portfolio site with no case studies, just full daily notes,
+					screenshots, and other things i took note of each day until a project
+					was done. i know it&apos;d be a nightmare to parse, but something
+					about that just feels more real and sincere.
 				</p>
 				<p>
 					short of that, i hope this all comes across kind of like a mug that i
