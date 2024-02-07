@@ -4,6 +4,7 @@ import home01 from "@/public/home01.png";
 import home02 from "@/public/home02.png";
 import home03 from "@/public/home03.png";
 import home04 from "@/public/home04.png";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
 	return (

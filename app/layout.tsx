@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter, Fragment_Mono } from "next/font/google";
 import Pantasia from "next/font/local";
 import "./globals.css";
@@ -27,7 +29,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={`${fragmentMono.variable} ${pantasia.variable}`}>
-			<body>{children}</body>
+			<body>
+				{children}
+				<Analytics />
+				<SpeedInsights />
+			</body>
 		</html>
 	);
 }
