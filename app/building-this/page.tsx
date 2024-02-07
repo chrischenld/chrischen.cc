@@ -66,19 +66,19 @@ export default function Home() {
 						className="xl:max-w-2xl mb-0"
 					></Image>
 					<p className="text-xs text-neutral-500 w-full text-left">
-						i spent many hours in here as a kid. i think about this UI a lot
-						today.
+						i spent many hours on this game in my childhood. i think about this
+						UI a lot today.
 					</p>
 				</div>
 				<p>
-					because it wa so special to me, i always had a soft spot for the craft
-					of software and everything online. and not just what designers mean by
-					craft regarding whatever hot new app launched. but craft like, a hand
-					spun mug. and the difference between spinning your own imperfect mug
-					and handing it to someone, rather than handing them a &quot;more
-					flawless,&quot; mass produced mug. there is something nice to doing
-					the challenging bits from start to finish, but also doing it your way,
-					with full control.
+					because it was so special to me, i always had a soft spot for the
+					craft of software and everything online. and not just what designers
+					mean by craft regarding whatever hot new app launched. but craft like,
+					a hand spun mug. and the difference between spinning your own
+					imperfect mug and handing it to someone, rather than handing them a
+					&quot;more flawless,&quot; mass produced mug. there is something nice
+					to doing the challenging bits from start to finish, but also doing it
+					your way, with full control.
 				</p>
 				<p>
 					i&apos;ve always been interested in the design of tools but also the
