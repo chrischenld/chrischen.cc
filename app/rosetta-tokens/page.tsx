@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import home01 from "@/public/home01.png";
+import home01 from "@/public/home01.webp";
 import tokens01 from "@/public/tokens01.png";
 import tokens02 from "@/public/tokens02.png";
 import tokens03 from "@/public/tokens03.png";

@@ -9,7 +9,7 @@ import search04 from "@/public/search04.gif";
 import search05 from "@/public/search05.gif";
 import search06 from "@/public/search06.gif";
 import search07 from "@/public/search07.webp";
-import home03 from "@/public/home03.png";
+import home03 from "@/public/home03.webp";
 import { useEffect, useState, useRef } from "react";
 
 function useHighlighted() {

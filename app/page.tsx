@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import home01 from "@/public/home01.png";
-import home02 from "@/public/home02.png";
-import home03 from "@/public/home03.png";
-import home04 from "@/public/home04.png";
-import { Analytics } from "@vercel/analytics/react";
+import home01 from "@/public/home01.webp";
+import home02 from "@/public/home02.webp";
+import home03 from "@/public/home03.webp";
+import home04 from "@/public/home04.webp";
 
 export default function Home() {
 	return (

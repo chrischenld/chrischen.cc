@@ -9,7 +9,7 @@ import heartbeat04 from "@/public/heartbeat04.webp";
 import heartbeat05 from "@/public/heartbeat05.webp";
 import heartbeat06 from "@/public/heartbeat06.webp";
 import heartbeat07 from "@/public/heartbeat07.webp";
-import home04 from "@/public/home04.png";
+import home04 from "@/public/home04.webp";
 import { useEffect, useState, useRef } from "react";
 
 function useHighlighted() {

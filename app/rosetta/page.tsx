@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import home02 from "@/public/home02.png";
+import home02 from "@/public/home02.webp";
 import rosetta01 from "@/public/rosetta01.png";
 import rosetta02 from "@/public/rosetta02.png";
 import rosetta03 from "@/public/rosetta03.png";
