@@ -28,7 +28,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={`${fragmentMono.variable} ${pantasia.variable}`}>
+		<html
+			lang="en"
+			className={`${fragmentMono.variable} ${pantasia.variable}`}
+			suppressHydrationWarning
+		>
 			<body>
 				{children}
 				<Analytics />

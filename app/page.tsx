@@ -80,6 +80,7 @@ export default function Home() {
 								className="object-contain"
 								fill
 								priority
+								sizes="(max-width: 768px) 100%"
 							></Image>
 						</div>
 						<div className="flex h-8 justify-between items-end">
@@ -100,6 +101,7 @@ export default function Home() {
 								className="object-contain"
 								fill
 								priority
+								sizes="(max-width: 768px) 100%"
 							></Image>
 						</div>
 						<div className="flex h-8 justify-between items-end">
@@ -117,6 +119,7 @@ export default function Home() {
 								className="object-contain"
 								fill
 								priority
+								sizes="(max-width: 768px) 100%"
 							></Image>
 						</div>
 						<div className="flex h-8 justify-between items-end">
@@ -137,6 +140,7 @@ export default function Home() {
 								className="object-contain"
 								fill
 								priority
+								sizes="(max-width: 768px) 100%"
 							></Image>
 						</div>
 						<div className="flex h-8 justify-between items-end">
