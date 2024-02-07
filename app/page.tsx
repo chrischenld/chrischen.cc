@@ -8,8 +8,8 @@ import home04 from "@/public/home04.webp";
 export default function Home() {
 	return (
 		<main className="flex flex-col md:flex-row h-fit md:min-h-screen pb-16 md:pb-0">
-			<div className="p-2 md:sticky md:top-0">
-				<div className="flex flex-col px-4 gap-4 w-full md:min-w-60 md:w-60 md:min-h-full h-auto text-xs text-neutral-400">
+			<div className="p-2 pt-3 md:pt-2 mt-px md:mt-0 md:sticky md:top-0">
+				<div className="flex flex-col md:px-4 gap-4 w-full md:min-w-60 md:w-60 md:min-h-full h-auto text-xs text-neutral-400">
 					<h1 className="text-neutral-100 ">chris chen</h1>
 					<p className="">
 						currently designing at{" "}
