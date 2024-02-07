@@ -80,7 +80,7 @@ export default function Home() {
 								className="object-contain"
 								fill
 								priority
-								sizes="(max-width: 768px) 100%"
+								sizes="(max-width: 300px) 50%, (max-width: 496px) 100%, (max-width: 800px) 50%, (max-width: 1092px) 100%, (max-width: 1300px) 50%, (max-width: 1600px) 100%"
 							></Image>
 						</div>
 						<div className="flex h-8 justify-between items-end">
@@ -101,7 +101,7 @@ export default function Home() {
 								className="object-contain"
 								fill
 								priority
-								sizes="(max-width: 768px) 100%"
+								sizes="(max-width: 300px) 50%, (max-width: 496px) 100%, (max-width: 800px) 50%, (max-width: 1092px) 100%, (max-width: 1300px) 50%, (max-width: 1600px) 100%"
 							></Image>
 						</div>
 						<div className="flex h-8 justify-between items-end">
@@ -119,7 +119,7 @@ export default function Home() {
 								className="object-contain"
 								fill
 								priority
-								sizes="(max-width: 768px) 100%"
+								sizes="(max-width: 300px) 50%, (max-width: 496px) 100%, (max-width: 800px) 50%, (max-width: 1092px) 100%, (max-width: 1300px) 50%, (max-width: 1600px) 100%"
 							></Image>
 						</div>
 						<div className="flex h-8 justify-between items-end">
@@ -140,7 +140,7 @@ export default function Home() {
 								className="object-contain"
 								fill
 								priority
-								sizes="(max-width: 768px) 100%"
+								sizes="(max-width: 300px) 50%, (max-width: 496px) 100%, (max-width: 800px) 50%, (max-width: 1092px) 100%, (max-width: 1300px) 50%, (max-width: 1600px) 100%"
 							></Image>
 						</div>
 						<div className="flex h-8 justify-between items-end">
