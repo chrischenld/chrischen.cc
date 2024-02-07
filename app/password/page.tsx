@@ -19,13 +19,14 @@ export default function Home() {
 			body: JSON.stringify({ password }),
 			headers: { "Content-Type": "application/json" },
 			method: "post",
+			credentials: "include", // Include credentials (cookies) with the request
 		});
 
 		if (request.status !== 200) {
 			setPasswordIncorrect(true);
 			setLoading(false);
 		} else {
-			router.push(requestPage || "/");
+			router.replace(requestPage || "/");
 		}
 	};
 
